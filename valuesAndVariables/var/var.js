@@ -4,6 +4,6 @@
 
 // variables declared with var can be reassinged. 
 
-var age = 26
-age = 27
+var age = 26;
+age = 27;
 console.log(age);
