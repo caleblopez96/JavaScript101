@@ -1,4 +1,4 @@
-// checks if array includes a certain element.
+// checks if array includes a certain element or value.
 // does NOT mutate original array.
 
 

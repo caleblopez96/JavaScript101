@@ -18,3 +18,4 @@ const trees = [
 
 const result = trees.find(tree => tree.name === "birch");
 console.log(result); // {name: 'birch', count: 4}
+

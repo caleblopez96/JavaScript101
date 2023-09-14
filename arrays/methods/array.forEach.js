@@ -18,4 +18,4 @@ shoppingCart.forEach(function(item){
     totalPrice += item.price
 });
 
-console.log(`Total Price: $${totalPrice.toFixed(2)}`);
+console.log(`Total Price: $${totalPrice.toFixed(2)}`); // $1222.00
