@@ -4,10 +4,12 @@
 // EXAMPLE: 
 // returns the character at a specific index in a string.
 'Javascript'.charAt(2); // v
-function firstAndLastInitial(firstName, LastName) {
+
+
+function firstAndLastInitial(firstName, lastName) {
     let firstIntial = firstName.charAt(0);
     let lastInitial = lastName.charAt(0);
-    let final = `${firstIntial + lastInitial}`
-    return final
+    let final = `${firstIntial + lastInitial}`;
+    return final;
 }
-firstAndLastInitial('Caleb', 'Lopez');
+firstAndLastInitial('Caleb', 'Lopez'); // 'CL'
