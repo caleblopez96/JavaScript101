@@ -15,7 +15,7 @@ let toDoList = [chore1, chore2, chore3]; // ['Dishes', 'Trash', 'laundry']
 
 function addChore(chore) {
     toDoList.unshift(chore);
-};
+}
 
 addChore('Homework');
 console.log(toDoList);

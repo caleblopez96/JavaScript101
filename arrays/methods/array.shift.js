@@ -13,7 +13,7 @@ function removeNext() {
     const currentCustomer = customerQueue.shift();
     console.log(`${currentCustomer} has been removed from the queue`);
     nextCustomer = `${customerQueue[0]} is next in line`;
-};
+}
 
 removeNext();
 console.log(customerQueue);

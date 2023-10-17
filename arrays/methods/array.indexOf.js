@@ -10,7 +10,7 @@ const userProfiles = [
     { id: 2, username: 'jane_smith', name: 'Jane Smith' },
     { id: 3, username: 'alice_johnson', name: 'Alice Johnson' },
     { id: 4, username: 'bob_wilson', name: 'Bob Wilson' },
-];
+]
 
 function findUserProfile(username) {
     return userProfiles.find()

@@ -8,7 +8,7 @@ const cartItems = [
     { name: 'Item 1', price: 10 },
     { name: 'Item 2', price: 15 },
     { name: 'Item 3', price: 20 }
-];
+]
 
 const totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
 

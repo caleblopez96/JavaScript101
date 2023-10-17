@@ -10,7 +10,7 @@ const products = [
     { name: 'Product B', category: 'Clothing', price: 50 },
     { name: 'Product C', category: 'Electronics', price: 150 },
     { name: 'Product D', category: 'Home', price: 75 }
-];
+]
 
 const electronicsProducts = products.filter(product => product.category === 'Electronics');
 

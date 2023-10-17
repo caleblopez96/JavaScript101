@@ -7,12 +7,12 @@
 const cartItems = [
     { name: 'Item 1', price: 10 },
     { name: 'Item 2', price: 15 }
-];
+]
 
 const addItemToCart = () => {
     const newItem = { name: 'Item 3', price: 20 };
     cartItems.push(newItem);
-};
+}
 
 addItemToCart();
 console.log(cartItems); // [{...}, {...}, {...}]

@@ -10,12 +10,12 @@ const shoppingCart = [
     { product: 'Headphones', price: 149 },
     { product: 'Mouse', price: 25 },
     { product: 'Keyboard', price: 49 },
-];
+]
 
 let totalPrice = 0;
 
 shoppingCart.forEach(function(item){
     totalPrice += item.price
-});
+})
 
 console.log(`Total Price: $${totalPrice.toFixed(2)}`); // $1222.00

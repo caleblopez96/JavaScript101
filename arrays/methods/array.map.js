@@ -13,11 +13,11 @@ const products = [
     { name: 'Product A', price: 100 },
     { name: 'Product B', price: 150 },
     { name: 'Product C', price: 200 }
-];
+]
 
 const formattedProducts = products.map(product => ({
     ...product, formattedPrice: `$${product.price.toFixed(2)}`
-})); 
+})) 
 
 console.log(formattedProducts); // [{…}, {…}, {…}] 
 // 0: {name: 'Product A', price: 100, formattedPrice: '$100.00'} 

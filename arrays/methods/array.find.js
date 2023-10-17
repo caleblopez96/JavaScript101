@@ -14,7 +14,7 @@ const trees = [
     { name: "birch", count: 4 },
     { name: "maple", count: 5 },
     { name: "oak", count: 2 }
-];
+]
 
 const result = trees.find(tree => tree.name === "birch");
 console.log(result); // {name: 'birch', count: 4}

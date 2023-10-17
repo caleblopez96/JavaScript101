@@ -9,7 +9,7 @@ let shoppingCart = ["Item 1", "Item 2", "Item 3", "Item 4"];
 function removeLastItem(array) {
     const removedItem = shoppingCart.pop();
     console.log(`Removed: ${removedItem}`);
-};
+}
 
 removeLastItem(shoppingCart); // Removed: Item 4
 console.log(shoppingCart); // ['Item 1', 'Item 2', 'Item 3']
