@@ -5,4 +5,4 @@ const listItems = document.querySelectorAll('.listItem');
 
 listItems.forEach(function(item) {
     item.style.color = 'red';
-})
+});

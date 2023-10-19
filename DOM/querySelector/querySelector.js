@@ -9,4 +9,4 @@ const button = document.querySelector('.myButton');
 
 button.addEventListener('click', () => {
     button.style.backgroundColor = 'green';
-})
+});
