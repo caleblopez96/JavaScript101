@@ -4,10 +4,12 @@
 const list = [2, 3, 4];
 
 for(let i = 0; i < list.length; i++) {
-    console.log(list[i]);
-};
+    console.log(list[i]); // 2 3 4
+}
 
 // ES6
-for (i of list) {
-    console.log(i);
-};
+const array = [1, 2, 3, 4, 5];
+
+for (element of array) {
+    console.log(element); // 1 2 3 4 5
+}
