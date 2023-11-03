@@ -1,3 +1,10 @@
+// EXAMPLE:
 const greet = () => console.log('Hello');
 
-greet();
+greet(); // Hello
+
+
+// EXAMPLE:
+button.addEventListener('click', () => {
+    // 
+});
