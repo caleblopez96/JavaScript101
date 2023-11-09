@@ -11,7 +11,7 @@ let chore3 = 'Laundry';
 
 
 // EXAMPLE: 
-let toDoList = [chore1, chore2, chore3]; // ['Dishes', 'Trash', 'laundry']
+let toDoList = [ chore1, chore2, chore3 ]; // ['Dishes', 'Trash', 'laundry']
 
 function addChore(chore) {
     toDoList.unshift(chore);

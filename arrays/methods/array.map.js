@@ -4,7 +4,7 @@
 
 
 // EXAMPLE: 
-const beforeMap = [2, 4, 6, 8];
+const beforeMap = [ 2, 4, 6, 8 ];
 
 const mappedArray = beforeMap.map((x) => x * 2);
 console.log(mappedArray) // [4, 8, 12, 16]

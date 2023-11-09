@@ -3,7 +3,7 @@
 //! returns NEW array.
 
 // EXAMPLE: 
-[1, 2, 3, 4, 5].filter((num) => num % 2); // [1, 3, 5]
+[ 1, 2, 3, 4, 5] .filter((num) => num % 2); // [1, 3, 5]
 
 const products = [
     { name: 'Product A', category: 'Electronics', price: 50 },

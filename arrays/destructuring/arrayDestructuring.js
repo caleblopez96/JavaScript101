@@ -3,7 +3,7 @@
 // used commonly in function parameter assignments, iteration, and more.
 
 // EXAMPLE: 
-const numbers = [15, 20, 10];
+const numbers = [ 15, 20, 10 ];
 const [ firstNumber, secondNumber, thirdNumber ] = numbers;
 console.log(firstNumber); // 15
 console.log(secondNumber); // 20

@@ -2,7 +2,7 @@
 //! MUTATES original array.
 
 // EXAMPLE: 
-[1, 2, 3, 4, 5].push(1); // 6 -> [1, 2, 3, 4, 5, 1]
+[ 1, 2, 3, 4, 5 ].push(1); // 6 -> [1, 2, 3, 4, 5, 1]
 
 const cartItems = [
     { name: 'Item 1', price: 10 },

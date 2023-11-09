@@ -2,7 +2,7 @@
 //! does NOT mutate original array.
 
 // EXAMPLE:
-[1, 2, 3, 4, 5].reduce((acc, num) => acc + num); // 15
+[ 1, 2, 3, 4, 5 ].reduce((acc, num) => acc + num); // 15
 
 const cartItems = [
     { name: 'Item 1', price: 10 },

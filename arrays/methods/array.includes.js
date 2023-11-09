@@ -3,7 +3,7 @@
 
 
 // EXAMPLE:
-const schoolSubjects = ["Math", "Science", "Social Studies"];
+const schoolSubjects = [ "Math", "Science", "Social Studies" ];
 
 let mathSubjectCheck = schoolSubjects.includes("Math");
 console.log(mathSubjectCheck); // true

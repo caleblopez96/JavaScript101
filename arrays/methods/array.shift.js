@@ -2,11 +2,11 @@
 //! MUTATES original array.
 
 // EXAMPLE:
-[1, 2, 3, 4, 5].shift(); // 1 -> [2, 3, 4, 5]
+[ 1, 2, 3, 4, 5 ].shift(); // 1 -> [2, 3, 4, 5]
 
 
 // EXAMPLE: 
-let customerQueue = ["Person 1", "Person 2", "Person 3", "Person 4"];
+let customerQueue = [ "Person 1", "Person 2", "Person 3", "Person 4" ];
 let nextCustomer;
 
 function removeNext() {
