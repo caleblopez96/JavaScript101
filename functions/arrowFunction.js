@@ -1,10 +1,17 @@
+// compact alternative to a function expression.
+
+// ** does NOT have its own binding to this **
+
+
 // EXAMPLE:
-const greet = () => console.log('Hello');
+const addition = (...numbers) => {
+    return numbers.reduce((num, sum) => num + sum);
+}
 
-greet(); // Hello
+console.log(addition(1, 2, 3, 4)); // 10
 
+// one line
+const addition2 = (...numbers) => numbers.reduce((num, sum) => num + sum);
 
-// EXAMPLE:
-button.addEventListener('click', () => {
-    // 
-});
+console.log(addition2(1, 2, 3, 4)); // 10
+

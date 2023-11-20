@@ -1,6 +1,6 @@
 
-function greet(name) {
-    console.log(`Hello, ${name}!`);
+function addition(...numbers) {
+    return numbers.reduce((sum, num) => sum + num);
 }
 
-greet('Caleb');
+console.log(addition(1, 2, 3, 4)); // 10
