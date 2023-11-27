@@ -14,4 +14,5 @@ function displayInfo( { name = 'User', age = '00' } ) {
     console.log(`Hello: ${name}. Age: ${age}`);
 }
 
-displayInfo( { name: 'John Doe', age : 33 } );
+displayInfo( { name: 'John Doe', age : 33 } ); // Hello: John Doe. Age: 33
+displayInfo({},{}); // Hello: User. Age: 00
