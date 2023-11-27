@@ -7,7 +7,13 @@ const person = {
     age : 30
 }
 
-const { firstName, lastName, age } = person;
-console.log(firstName); // john
-console.log(lastName); // doe 
+// OLD:
+const personFirstName = person.firstName; // john
+const personLastName = person.lastName; // doe
+const personAge = person.age; // 30
+
+// NEW:
+const {first, last, age} = person;
+console.log(first); // john
+console.log(last); // doe 
 console.log(age); // 30

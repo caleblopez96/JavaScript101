@@ -15,4 +15,3 @@ function displayInfo( { name = 'User', age = '00' } ) {
 }
 
 displayInfo( { name: 'John Doe', age : 33 } );
-
