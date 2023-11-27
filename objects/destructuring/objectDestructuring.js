@@ -7,13 +7,19 @@ const person = {
     age : 30
 }
 
-// OLD:
+// NEW:
+const { first, last, age } = person;
+console.log(first); // john
+console.log(last); // doe 
+console.log(age); // 30
+
+
+// OLD (dot notation):
 const personFirstName = person.firstName; // john
 const personLastName = person.lastName; // doe
 const personAge = person.age; // 30
 
-// NEW:
-const {first, last, age} = person;
-console.log(first); // john
-console.log(last); // doe 
-console.log(age); // 30
+// OLD (bracket notation):
+const firstName = person['firstName']; // john
+const lastName = person['lastName']; // doe
+const age2 = person['age']; // 30
