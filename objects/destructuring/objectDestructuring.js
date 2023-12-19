@@ -7,7 +7,7 @@ const person = {
     age : 30
 }
 
-// NEW:
+// DESTRUCTURING:
 const { first, last, age } = person;
 console.log(first); // john
 console.log(last); // doe 

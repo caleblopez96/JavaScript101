@@ -1,5 +1,4 @@
-// use array.indexOf() to finx the index of the first occurence 
-// of a specified element within an array.
+// use array.indexOf() to finx the index of the first occurence of a specified element within an array.
 
 //! does NOT mutate original array.
 

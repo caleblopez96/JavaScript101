@@ -1,5 +1,4 @@
-// Use array.forEach() method to iterate over elements in an array
-// and apply a function to each element. 
+// Use array.forEach() method to iterate over elements in an array and apply a function to each element. 
 
 // does NOT mutate original array.
 [1, 2, 3, 4, 5].forEach((num) => (num * 2)); // [2, 4, 6, 8, 10];

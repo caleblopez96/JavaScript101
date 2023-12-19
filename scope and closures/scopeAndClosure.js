@@ -26,3 +26,4 @@ const nextId = idGenerator();
 nextId(); // 1
 nextId(); // 2
 nextId(); // 3
+
