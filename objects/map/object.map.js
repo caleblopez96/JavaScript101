@@ -11,3 +11,7 @@ console.log(eventsMap);
 for (const [key, value] of eventsMap) {
     console.log([key, value]); // (2) ['1', 'a'] (2) ['2', 'b'] (2) ['3', 'c']
 }
+
+// first key and first value
+const [[firstKey, firstValue]] = eventsMap;
+console.log(firstKey, firstValue); // 1 a
