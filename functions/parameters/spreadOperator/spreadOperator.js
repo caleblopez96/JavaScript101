@@ -18,17 +18,16 @@ console.log(numbers); // [1, 2, 3]
 function sum(num1, num2, num3) {
     return num1 + num2 + num3;
 }
-
 const numberArray = [1, 2, 3];
 console.log(sum(...numberArray)); // 6
 
 
-// Convert array into object
+// EXAMPLE: Convert array into object
 const array1 = [1, 2, 3];
-const objectFromArray = { ...array1 };
+const objectFromArray = {...array1};
 console.log(objectFromArray); // {0: 1, 1: 2, 2: 3}
 
-// Convert string into array with each letter its own element.
+// EXAMPLE: Convert string into array with each letter its own element.
 const string = 'hello';
 const eachLetter = [...string];
 console.log(eachLetter); // ['h', 'e', 'l', 'l', 'o'];
