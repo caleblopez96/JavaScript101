@@ -4,11 +4,17 @@
 
 // *PACKING elements into box*
 
-// EXAMPLE:
+// EXAMPLE: function that accepts unlimited arguments and adds them together
 function sum(...numbers) {
     return numbers.reduce((total, num) => total + num, 0);
 }
 console.log(sum(1, 2, 3, 4, 5)); // 15
+
+//EXAMPLE: function that accepts unlimited arguments and subtracts them
+function subtract(...numbers) {
+    return numbers.reduce((total, num) => total - num, 0);
+}
+console.log(subtract(5, 3, 1)); // -9
 
 // EXAMPLE: Combining multiple arrays into a single array
 const arr1 = [1, 2, 3, 4, 5];
