@@ -4,14 +4,14 @@
 
 // *UNPACKING elements from box*
 
-// EXAMPLE: array literal
+// opposite of ...rest
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+// EXAMPLE: unpacking each number of the numbers array
 const numbers = [1, 2, 3];
-
-// unpacking each number
 console.log(...numbers); // 1 2 3
-
-// leaves elements inside of the array.
-console.log(numbers); // [1, 2, 3]
+console.log(numbers); // [1, 2, 3] leaves elements inside of the array.
 
 
 // EXAMPLE: function call 
@@ -19,8 +19,8 @@ function sum(num1, num2, num3) {
     return num1 + num2 + num3;
 }
 const numberArray = [1, 2, 3];
+console.log(sum(numberArray)); // 1,2,3,undefinedundefined
 console.log(sum(...numberArray)); // 6
-
 
 // EXAMPLE: Convert array into object
 const array1 = [1, 2, 3];
@@ -31,3 +31,12 @@ console.log(objectFromArray); // {0: 1, 1: 2, 2: 3}
 const string = 'hello';
 const eachLetter = [...string];
 console.log(eachLetter); // ['h', 'e', 'l', 'l', 'o'];
+
+// EXAMPLE: unpacking array of objects
+const arrayOfObject = [
+    { key : 'value' },
+    { key : 'value2' },
+    { key : 'value3' }
+]
+console.log(arrayOfObject); // [{...}, {...}, {...}] leaves objects inside of array
+console.log(...arrayOfObject); // {key: 'value'} {key: 'value'} {key: 'value'} 
