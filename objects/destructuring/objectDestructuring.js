@@ -7,19 +7,31 @@ const person = {
     age : 30
 }
 
-// DESTRUCTURING:
-const { first, last, age } = person;
-console.log(first); // john
-console.log(last); // doe 
+// EXAMPLE: Destructuring the person object into three variables to represent objects value at each key.
+const {firstName, lastName, age} = person;
+console.log(firstName); // john
+console.log(lastName); // doe 
 console.log(age); // 30
 
-
 // OLD (dot notation):
-const personFirstName = person.firstName; // john
-const personLastName = person.lastName; // doe
-const personAge = person.age; // 30
+const personFirstName = person.firstName;
+const personLastName = person.lastName;
+const personAge = person.age; 
 
 // OLD (bracket notation):
-const firstName = person['firstName']; // john
-const lastName = person['lastName']; // doe
-const age2 = person['age']; // 30
+const firstName2 = person['firstName'];
+const lastName2 = person['lastName'];
+const age2 = person['age'];
+
+
+// EXAMPLE: Destructuring the car object into two variables that aren't the same name as the object key.
+const car = {
+    color : 'red',
+    miles : 10000,
+}
+
+const {color: carColor, miles: carMileage} = car
+console.log(carColor); // red
+console.log(carMileage); // 10000
+
+
