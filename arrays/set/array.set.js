@@ -39,3 +39,8 @@ console.log(combinedSets); // 1 2 3 4 5 6
 // remove duplicate values from array
 let removedDuplicates = new Set([ 1, 2, 3, 2, 5, 6, 3 ]);
 console.log(removedDuplicates);
+
+// creating a copy of the original array
+const original = [1, 1, 2, 3, 4, 5, 6, 6];
+const copy = [...new Set(original)];
+console.log(copy); // [1, 2, 3, 4, 5, 6]
