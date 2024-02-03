@@ -22,4 +22,4 @@ console.log(cartItems); // [{...}, {...}, {...}]
 // EXAMPLE: pushing elements to array
 const array1 = [1, 2, 3];
 array1.push('a', 'b', 'c');
-console.log(array1); // [1, 2, 3, 'a', 'b', 'c'];
+console.log(array1); // [1, 2, 3, 'a', 'b', 'c']

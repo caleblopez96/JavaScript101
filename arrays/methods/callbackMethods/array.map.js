@@ -2,8 +2,6 @@
 // does NOT mutate original array.
 //! returns NEW array.
 
-// use map if you need to use the new array it creates, otherwise just use a for...of loop
-
 
 // EXAMPLE: 
 const beforeMap = [ 2, 4, 6, 8 ];
@@ -25,9 +23,3 @@ console.log(formattedProducts); // [{…}, {…}, {…}]
 // 0: {name: 'Product A', price: 100, formattedPrice: '$100.00'} 
 // 1: {name: 'Product B', price: 150, formattedPrice: '$150.00'} 
 // 2: {name: 'Product C', price: 200, formattedPrice: '$200.00'}
-
-
-// EXAMPLE: Creating clone of array
-const original = [1, 2, 3];
-const clone = original.map(i => i);
-console.log(original, clone);
