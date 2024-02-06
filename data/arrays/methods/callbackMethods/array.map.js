@@ -6,6 +6,7 @@
 // map(callbackFn)
 // map(callbackFn, thisArg)
 // array.map((callbackFn) => {/.../});
+// array.map(callbackFn(arguments) {/.../});
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
 

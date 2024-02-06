@@ -5,6 +5,7 @@
 // find(callbackFn)
 // find(callbackFn, thisArg)
 // array.find((callbackFn) => {/.../});
+// array.find(callbackFn(arguments) {/.../});
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find
 

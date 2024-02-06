@@ -6,6 +6,7 @@
 // reduce(callbackFn)
 // reduce(callbackFn, initialValue)
 // array.reduce((callbackFn) => {/.../});
+// array1.reduce(callbackFn(arguments) {/.../});
 
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce

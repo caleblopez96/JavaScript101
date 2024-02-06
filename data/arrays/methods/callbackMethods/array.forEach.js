@@ -5,6 +5,7 @@
 // forEach(callbackFn)
 // forEach(callbackFn, thisArg)
 // array.forEach((callbackFn) => {/.../});
+// array.forEach(callbackFn(arguments) {/.../});
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 

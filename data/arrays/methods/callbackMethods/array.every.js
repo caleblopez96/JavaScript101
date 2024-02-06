@@ -5,6 +5,7 @@
 // every(callbackFn)
 // every(callbackFn, thisArg)
 // array.every((callbackFn) => {/.../});
+// array.every(callbackFn(arguments) {/.../});
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every
 

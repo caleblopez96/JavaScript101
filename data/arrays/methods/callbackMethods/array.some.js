@@ -5,6 +5,7 @@
 // some(callbackFn)
 // some(callbackFn, thisArg)
 // array.some((callbackFn) => {/.../});
+// array.some(callbackFn(arguments) {/.../});
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some
 
