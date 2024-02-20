@@ -8,3 +8,8 @@
 // BigInt
 // Null
 // Symbol
+
+
+function createNameTag(name) {
+    return name
+}

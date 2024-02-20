@@ -25,4 +25,4 @@ console.log(result); // {name: 'birch', count: 4}
 // use find when you want a single element returned.
 // array.find() returns undefined if nothing is found. 
 
-//! use the filter instead of array.find when you need multiple elements returned.
+//! use filter instead of array.find when you need multiple elements returned.

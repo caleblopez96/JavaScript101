@@ -6,9 +6,7 @@
 // filter(callbackFn)
 // filter(callbackFn, thisArg)
 // array.filter((callbackFn) => {/.../});
-// array.filter(callbackFn(arguments) {/.../})
-
-
+// array.filter(callbackFn(arguments) {/.../});
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
 

@@ -1,5 +1,14 @@
 // A simpler and more declarative way to iterate over an array.
 
+// SYNTAX: 
+/* 
+    for (variable of iterable) {
+        
+    } 
+*/
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+
 // ES5
 const list = [ 2, 3, 4 ];
 

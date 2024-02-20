@@ -1,4 +1,13 @@
-// Use array.forEach() method to iterate over elements in an array and apply a function to each element. 
+// Use forEach() to iterate over elements
+// in an array and apply a function to each element.
+
+// SYNTAX: 
+// forEach(callbackFn)
+// forEach(callbackFn, thisArg)
+// array.forEach((callbackFn) => {/.../});
+// array.forEach(callbackFn(arguments) {/.../});
+
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
 
 // does NOT mutate original array.
 [1, 2, 3, 4, 5].forEach((num) => (num * 2)); // [2, 4, 6, 8, 10];

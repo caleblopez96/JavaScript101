@@ -29,3 +29,5 @@ const task = [
 const completedTask = task.every(task => task.completed);
 
 console.log(completedTask); // false
+
+

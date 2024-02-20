@@ -23,7 +23,8 @@ const shoppingCart = [
 let totalPrice = 0;
 
 shoppingCart.forEach(function(item){
-    totalPrice += item.price
-})
+    return totalPrice += item.price;
+});
 
 console.log(`Total Price: $${totalPrice.toFixed(2)}`); // $1222.00
+
