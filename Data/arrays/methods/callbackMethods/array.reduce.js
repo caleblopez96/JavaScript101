@@ -5,14 +5,17 @@
 // SYNTAX:
 // reduce(callbackFn)
 // reduce(callbackFn, initialValue)
-// array.reduce((callbackFn) => {/.../});
-// array1.reduce(callbackFn(arguments) {/.../});
-
+// array.reduce((accumulator, currentValue) => { /* logic */ });
+// array.reduce(callbackFn(accumulator, currentValue) { /* logic */ });
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
 
-// EXAMPLE:
+// EXAMPLES:
 [ 1, 2, 3, 4, 5 ].reduce((acc, num) => acc + num); // 15
+
+[3, 4, 5, 6, 7].reduce((accumulator, startingValue) => {
+    return accumulator + startingValue;
+}); // 25
 
 const cartItems = [
     { name: 'Item 1', price: 10 },

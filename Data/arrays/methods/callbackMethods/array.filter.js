@@ -31,3 +31,64 @@ console.log(electronicsProducts); // [{...}, {...}]
 const original = [1, 2, 3];
 const copy = original.filter(() => true);
 console.log(original, copy);
+
+// EXAMPLE:
+const books = [{
+    title: 'Good Omen',
+    authors: ['terry pratchett', 'neil gaiman'],
+    rating: 4.25,
+    genre: ['fiction', 'fantasy']
+},
+{
+    title: 'changing my mind', 
+    authors: ['zadie smith'],
+    rating: 3.83,
+    genre: ['nonfiction', 'essay']
+},
+{
+    title: 'bone the complete edition',
+    authors: ['jeff smith'],
+    rating: 4.42,
+    genre: ['fiction', 'graphic novel', 'fantasy']
+},
+{
+    title: 'american gods',
+    authors: ['neil gaiman'],
+    rating: 4.11,
+    genre: ['fiction', 'fantasy']
+},
+{
+    title: 'a gentleman in moscow',
+    authors: ['amor towles'],
+    rating: 4.54,
+    genre: ['fiction', 'historical fiction']
+},
+{
+    title: 'the name of the wind',
+    authors: ['patrick rothfuss'],
+    rating: 4.54,
+    genre: ['fiction', 'fantasy']
+},
+{
+    title: 'the overstory',
+    authors: ['richard powers'],
+    rating: 4.19,
+    genre: ['fiction', 'short stories']
+},
+{
+    title: 'the way of kings',
+    authors: ['brandon sanderson'],
+    rating: 4.65,
+    genre: ['fantasy', 'epic']
+}
+];
+
+const highRating = books.filter(function(book) {
+    return book.rating > 4.3
+});
+
+console.log(highRating);
+// {title: 'bone the complete edition', authors: Array(1), rating: 4.42, genre: Array(3)}
+// {title: 'a gentleman in moscow', authors: Array(1), rating: 4.54, genre: Array(2)}
+// {title: 'the name of the wind', authors: Array(1), rating: 4.54, genre: Array(2)}
+// {title: 'the way of kings', authors: Array(1), rating: 4.65, genre: Array(2)}

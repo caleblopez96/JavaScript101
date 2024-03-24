@@ -34,3 +34,21 @@ for (const key in myTeam) {
 // name my team 
 // members 12
 // rank #3
+
+// EXAMPLE:
+
+const jeopardyWinnings = {
+    regularPlay: 2522700,
+    watsonChallenge: 300000,
+    tournamentOfChampions: 500000,
+    battleOfTheDecades: 100000
+};
+
+for (let property in jeopardyWinnings) {
+    console.log(property, jeopardyWinnings[property]); 
+};
+
+// regularPlay 2522700
+// watsonChallenge 300000
+// tournamentOfChampions 500000
+// battleOfTheDecades 100000
