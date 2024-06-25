@@ -51,3 +51,19 @@ fetch(tarkovAPI, {
   }
 })
 .catch(error => console.log(error))
+
+// Tactical glasses
+// Anti-fragmentation glasses
+// Round frame sunglasses
+// Dundukk sport sunglasses
+// RayBench Hipster Reserve sunglasses
+// 6B34 anti-fragmentation glasses
+// Pyramex Proximity safety glasses
+// Oakley SI M Frame safety glasses
+// Crossbow tactical glasses
+// Oakley SI Gascan glasses
+// RayBench Aviator glasses
+// Twitch Rivals 2020 glasses
+// NPP KlASS Condor glasses
+// JohnB Liquid DNB glasses
+// Oakley SI Batwolf glasses
