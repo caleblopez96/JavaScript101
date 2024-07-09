@@ -1,4 +1,4 @@
-// an object which represents an eventual process.
+// an object that represents an eventual process.
 
 // the promise object represents the eventual
 // completion (or failure) of asynchronous operations and its resulting value.
@@ -10,6 +10,7 @@
 
 // use the .then() method to interact with a resolved promise.
 // use the .catch() method to interact with a rejected promise.
+// use the .finally() method to execute code regardless of resolution or rejection.
 
 
 // SYNTAX:
@@ -25,16 +26,19 @@ function fetchData() {
         }, timeout);
     })
 }
-
-// EXAMPLE: INTERACTING WITH RESOLVED PROMISE
-fetchData().then(() => {
-  // 
-});
-
-// EXAMPLE: INTERACTING WITH REJECTED PROMISE
-fetchData().catch(() => {
-  //
-});
+fetchData()
+.then((data) => {
+  // Handle successful resolution
+    console.log("Promise resolved with:", data);
+})
+.catch((err) => {
+  // Handle rejection
+  console.log("Promise rejected:", err);
+})
+.finally(() =>{
+  // Execute code regardless of resolution or rejection
+    console.log("Promise settled");
+})
 
 
 
@@ -43,14 +47,13 @@ fetchData().catch(() => {
 const randomPromise = new Promise((resolve, reject) => {
   setTimeout(() => {
     const randomNumber = Math.random();
-    randomNumber < 0.5 ? resolve() : reject();
+    randomNumber > 0.5 ? resolve() : reject();
   }, 5000)
 });
-
 randomPromise
 .then(() => {
-  console.log("number less than 0.5, promise resolved");
+  console.log("number greater than 0.5, promise resolved");
 })
 .catch(() => {
-  console.log("number greater than 0.5, promise rejected");
+  console.log("number less than 0.5, promise rejected");
 })
