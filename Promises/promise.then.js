@@ -6,8 +6,12 @@
 
 // you can chain multiple .then() methods to handle subsequent operations that depend on the previous resolved state.
 
+// .then() resolves with a response object.
+
 // SYNTAX:
-// EXAMPLE: CREATING A PROMISE
+// .then((response) => {})
+
+// EXAMPLE:
 function fetchData() {
   return new Promise((resolve, reject) => {
       setTimeout(() => {
@@ -16,15 +20,6 @@ function fetchData() {
   })
 }
 fetchData()
-.then(() => {
-// 
-})
-.then(() => {
-  // 
-})
-.then(() => {
-    // 
-})
-.catch(() => {
-//
-});
+.then((response) => response.json())
+.then((data) => console.log(data))
+.catch((error) => console.log("Error:", error))

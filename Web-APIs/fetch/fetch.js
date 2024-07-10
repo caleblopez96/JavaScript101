@@ -1,20 +1,42 @@
 // The Fetch API is used to make HTTP requests.
 // Fetch is promise based; it uses the .then() and the .catch() methods.
 
+// When fetching data from an API that returns JSON, 
+// you should parse the JSON response to interact with the data.
+
 // SYNTAX:
 // fetch()
 // fetch(url, {options})
 
-// EXAMPLE:
-// const url = 'https://api.example.com/data';
 // fetch(url)
-//     .then(response => response.json())
-//     .then(data => console.log(data))
-//     .catch(error => console.log('Error: ', error));
+// .then(response => response.json())
+// .then((data) => {
+//    interact with the data
+// })
+// .catch(error => console.log("Error:", error))
 
 
-// RESOURCE:
-// https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch
+// EXAMPLE:
+
+fetch('https://swapi.dev/api/planets/')
+.then(response => response.json())
+.then((data) => {
+  for(let planet of data.results) {
+    console.log(planet.name)
+  }
+})
+.catch(error => console.log('Error: ', error));
+// Tatooine
+// Alderaan
+// Yavin IV
+// Hoth
+// Dagobah
+// Bespin
+// Endor
+// Naboo
+// Coruscant
+// Kamino
+
 
 // EXAMPLE: 
 // calling and using api to allow user input 
