@@ -27,13 +27,14 @@ function fetchData() {
     })
 }
 fetchData()
+.then(response => response.json())
 .then((data) => {
   // Handle successful resolution
     console.log("Promise resolved with:", data);
 })
-.catch((err) => {
+.catch((error) => {
   // Handle rejection
-  console.log("Promise rejected:", err);
+  console.log("Promise rejected:", error);
 })
 .finally(() =>{
   // Execute code regardless of resolution or rejection
