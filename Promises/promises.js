@@ -19,14 +19,15 @@ const promiseSyntax = new Promise((resolve, reject) => {
 });
 
 // EXAMPLE: CREATING A PROMISE
-function fetchData() {
+function fetchData(url) {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
         //
         }, timeout);
     })
 }
-fetchData()
+const url = 'https://api.example.com'
+fetchData(url)
 .then(response => response.json())
 .then((data) => {
   // Handle successful resolution
