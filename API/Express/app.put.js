@@ -2,7 +2,16 @@
 
 // updating an existing book: PUT /api/books{id}
 
-app.put('/api/books:id', (res, rej) => {
+// SYNTAX using express: 
+app.put('/', (req, res) => {
+  // Update the book with a specified ID
+})
+
+// EXAMPLE using express:
+import express from 'express';
+const app = express();
+
+app.put('/api/books:id', (req, res) => {
   Book.findByIdUpdate(res.params.id, res.body, { new: true })
   .then(updatedBook => {
     if(!updatedBook) {

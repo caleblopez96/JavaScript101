@@ -3,7 +3,16 @@
 
 // Creating a new book: POST /api/books
 
-app.post('/api/books', (res, rej) => {
+// SYNTAX using express:
+app.post('/', (req, res) => {
+  // Create a new book
+})
+
+// EXAMPLE using express:
+import express from 'express';
+const app = express();
+
+app.post('/api/books', (req, res) => {
   const newBook = new Book({
     title: req.body.title,
     author: req.body.author,
