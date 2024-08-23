@@ -9,8 +9,11 @@ app.patch('/', (req, res) => {
 })
 
 // EXAMPLE using express:
-import express from 'express'
-const app = express()
+import express from 'express';
+const app = express();
+const port = 8080;
+
+app.use(express.json()); // express middleware that parses json 
 
 app.patch('/api/books/:id', (req, res) => {
   const { id } = req.params;
@@ -27,3 +30,4 @@ app.patch('/api/books/:id', (req, res) => {
       res.status(500).json({ error: 'Error occurred while updating the book' });
     });
 });
+

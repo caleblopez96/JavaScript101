@@ -10,6 +10,9 @@ app.put('/', (req, res) => {
 // EXAMPLE using express:
 import express from 'express';
 const app = express();
+const port = 8080;
+
+app.use(express.json()); // express middleware that parses json 
 
 app.put('/api/books:id', (req, res) => {
   Book.findByIdUpdate(res.params.id, res.body, { new: true })
