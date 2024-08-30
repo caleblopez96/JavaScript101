@@ -37,7 +37,7 @@ console.log(originalArray === clonedArray); // false
 
 
 
-
+//* COMPLETE
 //3. Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.
 function firstEl(array, n) {
   if(n == null){
@@ -134,11 +134,8 @@ sortArray([ -3, 8, 7, 6, 5, -4, 3, 2, 1 ]) // [-4, -3, 1, 2, 3, 5, 6, 7, 8]
 
 
 
-//TODO
+//* COMPLETE
 //8. Write a JavaScript program to find the most frequent item in an array.
-Sample array : var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];
-Sample Output : a ( 5 times )
-
 function findMostFrequent(array) {
   let count = {}
 
@@ -160,7 +157,7 @@ findMostFrequent(arr1) // {2: 2, 3: 4, 4: 1, 9: 1, a: 5}
 
 
 
-//TODO
+//* COMPLETE
 //14. Write a JavaScript program to remove duplicate items from an array (ignore case sensitivity).
 function removeDupes(array) {
   return new Set(array)
@@ -171,62 +168,55 @@ removeDupes([1,2,3,3,4,5,6,6,6,7]); // 1, 2, 3, 4, 5, 6, 7
 
 
 
-
+//* COMPLETE
 // 19. There are two arrays with individual values. Write a JavaScript program to compute the sum of each individual index value in the given array.
-Sample array :
-array1 = [1,0,2,3,4];
-array2 = [3,5,6,7,8,13];
-Expected Output :
-[4, 5, 8, 10, 12, 13]
+function twoArrays(array1, array2) {
+  const result = []
 
-function indexSum() {
+  const maxLength = Math.max(array1.length, array2.length)
 
-  const array1 = [1,0,2,3,4];
-  const array2 = [3,5,6,7,8,13];
-
-  return [array1.length - 1, array2.length - 1]
+  for(let i = 0; i < maxLength; i++) {
+      const value1 = array1[i] || 0
+      const value2 = array2[i] || 0
+      result.push(value1 + value2)
+  }
+  return result
 }
-indexSum() // [4, 5]
 
-function indexSum(...arrays) {
-  return arrays.reduce((acc, val) => {
-    
-  })
-}
+const array1 = [1, 0, 2, 3, 4];
+const array2 = [3, 5, 6, 7, 8, 13];
+
+console.log(twoArrays(array1, array2));
+// Output: [4, 5, 8, 10, 12, 13]
 ////////////////////////////////////////////////
 
 
 
 
-
+//* COMPLETE
 // Write a JavaScript program to compute the union of two arrays.
 // Sample Data :
-console.log(union([1, 2, 3], [100, 2, 1, 10]));
-function flattenArray(...array){
-  return array.reduce(() => {
-    array.concat()
-  })
+function union(array1, array2) {
+  return [... new Set([...array1, ...array2])]
 }
+console.log(union([1, 2, 3], [100, 2, 1, 10]));
 ////////////////////////////////////////////////
 
 
 
 
-//TODO this is so wrong
+//* Correct
 // 27. Write a JavaScript function to retrieve the value of a given property from all elements in an array.
-Sample array : [NaN, 0, 15, false, -22, '',undefined, 47, null]
-Expected result : [15, -22, 47]
 
 function retrieveValue(array) {
-  for(let i = 0; i < array.length; i++) {
-    arrayIndex = array[i]
-    if(typeof array[i] === 'number') {
-      return [array[i]]
-    }
-    else {
-      return `not a number`
+  const result = []
+
+  for (let i = 0; i < array.length; i++) {
+    if (typeof array[i] === 'number' && !isNaN(array)) {
+      result.push(array[i])
     }
   }
+  return result
 }
 
 retrieveValue([1, 2, 'string'])
@@ -241,7 +231,7 @@ Test data :
 console.log(remove_array_element([2, 5, 9, 6], 5));
 [2, 9, 6]
 
-function removeArrayElement(element, array) {
+function removeArrayElement(array, element) {
   if (array.includes(element)){
     return array.splice(element)
   }
@@ -252,15 +242,44 @@ removeArrayElement(1, [1, 2, 3])
 ////////////////////////////////////////////////
 
 
+// 29. Write a JavaScript function to fill an array with values (numeric, string with one character) within supplied bounds.
+// 
+Test Data :
+console.log(num_string_range('a', "z", 2));
+["a", "c", "e", "g", "i", "k", "m", "o", "q", "s", "u", "w", "y"]
 
-
-const testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-
-for(let i = 0; i < testArray.length; i++) {
-  console.log(testArray[i])
-  testArray
+function fillArray(...fillerElement) {
+  let result = []
+  
 }
 
-for(element in testArray) {
-  element += element * 2
+////////////////////////////////////////////////
+
+
+
+
+//* COMPLETE
+// 30. Write a JavaScript function that merges two arrays and removes all duplicate elements.
+function mergeArray(array1, array2) {
+  return new Set([...array1].concat([...array2]))
 }
+
+const array11 = [1, 2, 3];
+const array22 = [2, 30, 1];
+console.log(mergeArray(array11, array22)) // {1, 2, 3, 30}
+////////////////////////////////////////////////
+
+
+
+//* COMPLETE
+// 32. Write a JavaScript function to find an array containing a specific element.
+function findSpecificElement(array, element){
+  if(array.includes(element)) {
+    return true
+  } else {
+    return false
+  }
+}
+
+findSpecificElement([1, 2, 3],3) // true
+findSpecificElement([1, 2, 3],5) // false
