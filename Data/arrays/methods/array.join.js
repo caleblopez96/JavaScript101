@@ -1,16 +1,14 @@
-// use array.join() to create and return
-// a new string by concatenating all of the elements in the array,
-// separated by commas or a specified separator string.
+// use the join() method to concatenate all elements of an array into a string.
 
 // SYNTAX:
-// join()
-// join(separator)
+// array.join()
+// array.join(separator)
 
-const matrix = [
-  [1, 2, 3],
-  [4, 5, 6],
-  [7, 8, 9],
-];
 
-console.log(matrix.join()); // 1,2,3,4,5,6,7,8,9
-console.log(matrix.join("|")); // 1,2,3|4,5,6|7,8,9
+const colorArray = ['red', 'green', 'white', 'black']
+
+function joinAllEl(array) {
+  return array.join(', ')
+}
+
+joinAllEl(colorArray) // 'red, green, white, black'

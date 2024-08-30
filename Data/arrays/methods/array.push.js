@@ -31,3 +31,23 @@ console.log(cartItems); // [{...}, {...}, {...}]
 const array1 = [1, 2, 3];
 array1.push('a', 'b', 'c');
 console.log(array1); // [1, 2, 3, 'a', 'b', 'c']
+
+// 6. Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.
+function dashFormatter(number) {
+  let numToString = number.toString()
+
+  let result = []
+
+  for(let i = 0; i < numToString.length; i++) {
+    result.push(numToString[i]);
+  
+  if (i < numToString.length -1 && 
+    parseInt(numToString[i]) % 2 === 0 &&
+    parseInt(numToString[i+1]) % 2 === 0) {
+      result.push('-')
+    }
+  }
+  return result.join('')
+}
+console.log(dashFormatter(25468));
+////////////////////////////////////////
