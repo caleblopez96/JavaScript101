@@ -40,7 +40,7 @@ console.log(originalArray === clonedArray); // false
 //* COMPLETE
 //3. Write a JavaScript function to get the first element of an array. Passing the parameter 'n' will return the first 'n' elements of the array.
 function firstEl(array, n) {
-  if(n == null){
+  if (n == null) {
     return array[0];
   }
   return array.slice(0, n);
@@ -48,8 +48,8 @@ function firstEl(array, n) {
 
 // Test
 console.log(firstEl([7, 9, 0, -2]));  // 7
-console.log(firstEl([],3)); // []
-console.log(firstEl([7, 9, 0, -2],3)); // [7, 9, 0]
+console.log(firstEl([], 3)); // []
+console.log(firstEl([7, 9, 0, -2], 3)); // [7, 9, 0]
 
 // Explanation: 
 // Use the .slice() array method to return 'n' elements of the array
@@ -61,15 +61,15 @@ console.log(firstEl([7, 9, 0, -2],3)); // [7, 9, 0]
 //* COMPLETE
 //4. Write a JavaScript function to get the last element of an array. Passing the parameter 'n' will return the last 'n' elements of the array.
 function lastEl(array, n) {
-  if(n == null) {
+  if (n == null) {
     return array[array.length - 1]
   }
   return array.slice(-n) // -n counts from end of array
 }
 
 console.log(last([7, 9, 0, -2])); // -2
-console.log(last([7, 9, 0, -2],3)); // [9, 0, -2]
-console.log(last([7, 9, 0, -2],1)); // [-2]
+console.log(last([7, 9, 0, -2], 3)); // [9, 0, -2]
+console.log(last([7, 9, 0, -2], 1)); // [-2]
 
 // Explanation:
 // use the slice method to return the last 'n' elements.
@@ -103,12 +103,12 @@ function dashFormatter(number) {
 
   let result = []
 
-  for(let i = 0; i < numToString.length; i++) {
+  for (let i = 0; i < numToString.length; i++) {
     result.push(numToString[i]);
-  
-  if (i < numToString.length -1 && 
-    parseInt(numToString[i]) % 2 === 0 &&
-    parseInt(numToString[i+1]) % 2 === 0) {
+
+    if (i < numToString.length - 1 &&
+      parseInt(numToString[i]) % 2 === 0 &&
+      parseInt(numToString[i + 1]) % 2 === 0) {
       result.push('-')
     }
   }
@@ -128,7 +128,7 @@ function sortArray(array) {
   })
 }
 
-sortArray([ -3, 8, 7, 6, 5, -4, 3, 2, 1 ]) // [-4, -3, 1, 2, 3, 5, 6, 7, 8]
+sortArray([-3, 8, 7, 6, 5, -4, 3, 2, 1]) // [-4, -3, 1, 2, 3, 5, 6, 7, 8]
 ////////////////////////////////////////////
 
 
@@ -139,8 +139,8 @@ sortArray([ -3, 8, 7, 6, 5, -4, 3, 2, 1 ]) // [-4, -3, 1, 2, 3, 5, 6, 7, 8]
 function findMostFrequent(array) {
   let count = {}
 
-  array.forEach(item =>{
-    if(count[item]){
+  array.forEach(item => {
+    if (count[item]) {
       count[item] += 1
     } else {
       count[item] = 1
@@ -163,7 +163,7 @@ function removeDupes(array) {
   return new Set(array)
 }
 
-removeDupes([1,2,3,3,4,5,6,6,6,7]); // 1, 2, 3, 4, 5, 6, 7
+removeDupes([1, 2, 3, 3, 4, 5, 6, 6, 6, 7]); // 1, 2, 3, 4, 5, 6, 7
 //////////////////////////////////////////////
 
 
@@ -175,10 +175,10 @@ function twoArrays(array1, array2) {
 
   const maxLength = Math.max(array1.length, array2.length)
 
-  for(let i = 0; i < maxLength; i++) {
-      const value1 = array1[i] || 0
-      const value2 = array2[i] || 0
-      result.push(value1 + value2)
+  for (let i = 0; i < maxLength; i++) {
+    const value1 = array1[i] || 0
+    const value2 = array2[i] || 0
+    result.push(value1 + value2)
   }
   return result
 }
@@ -205,7 +205,7 @@ console.log(union([1, 2, 3], [100, 2, 1, 10]));
 
 
 
-//* Correct
+//* COMPLETE
 // 27. Write a JavaScript function to retrieve the value of a given property from all elements in an array.
 
 function retrieveValue(array) {
@@ -232,7 +232,7 @@ console.log(remove_array_element([2, 5, 9, 6], 5));
 [2, 9, 6]
 
 function removeArrayElement(array, element) {
-  if (array.includes(element)){
+  if (array.includes(element)) {
     return array.splice(element)
   }
 }
@@ -250,7 +250,7 @@ console.log(num_string_range('a', "z", 2));
 
 function fillArray(...fillerElement) {
   let result = []
-  
+
 }
 
 ////////////////////////////////////////////////
@@ -273,13 +273,38 @@ console.log(mergeArray(array11, array22)) // {1, 2, 3, 30}
 
 //* COMPLETE
 // 32. Write a JavaScript function to find an array containing a specific element.
-function findSpecificElement(array, element){
-  if(array.includes(element)) {
-    return true
-  } else {
-    return false
-  }
-}
+const findSpecificElement = (array, element) => array.includes(element) ? true : false
 
-findSpecificElement([1, 2, 3],3) // true
-findSpecificElement([1, 2, 3],5) // false
+findSpecificElement([1, 2, 3], 3) // true
+findSpecificElement([1, 2, 3], 5) // false
+
+
+
+
+//* COMPLETE
+// Create function that returns an int number that corresponds
+// to the amount of digits in the given int
+function findDigitsInNum(num) {
+  // convert num to string
+  num = num.toString().split('')
+  return num.length
+}
+findDigitsInNum(1234) // 4
+findDigitsInNum(1111111111111) // 13
+////////////////////////////////////////
+
+
+
+
+//* COMPLETE
+// Create a function that counts how many trues 
+function findTrue(array) {
+  const arrayOfTrue = []
+  array.map((element) => {
+    if (element === 'true') {
+      arrayOfTrue.push(element)
+    }
+  })
+  return arrayOfTrue.length
+}
+findTrue(['false', 'false', 'true'])
