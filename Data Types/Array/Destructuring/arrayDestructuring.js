@@ -43,3 +43,11 @@ const [firstFruit, ...restOfFruits] = fruits;
 console.log(firstFruit); // apple
 console.log(restOfFruits); // ['banana', 'strawberry', 'orange']
 
+
+// EXAMPLE: 
+const person = {
+  first: 'Caleb',
+  last: 'Lopez'
+}
+const {first, last} = person;
+console.log(first, last); // Caleb Lopez
