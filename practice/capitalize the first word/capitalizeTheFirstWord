@@ -1,0 +1,5 @@
+function capitalizeTheFirstWord(str) {
+  return str
+    .split(' ')
+}
+console.log('test'.split(' '))
