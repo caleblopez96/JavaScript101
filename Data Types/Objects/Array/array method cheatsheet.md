@@ -83,7 +83,9 @@ RETURNS new array iterator.
 DOES NOT MUTATE ARRAY.
 
 ```js
-[1, 2, 3].entries() // [Array Iterator]
+const iterator = ['A', 'B', 'C'].entries() // Object [Array Iterator]
+
+for(let entry of iterator) { console.log(entry) } // [0, 'A'] [1, 'B'] [2, 'C']
 ```
 
 ---
@@ -235,10 +237,211 @@ DOES NOT MUTATE ARRAY.
 #### `.map(callback, args)`
 Creates new array with results of func called on each element.
 
-RETURNS new array
+RETURNS new array.
 
 DOES NOT MUTATE ARRAY.
 ```js
 ['a', 'b', 'c'].map((letter) => letter.toUpperCase()) // ['A', 'B', 'C'] 
+```
+---
+
+#### `.pop()`
+Removes last element from array and returns it.
+
+RETURNS last element.
+
+ALTERS ORIGINAL ARRAY.
+```js
+[1, 2, 3, 4].pop() // 4
+```
+---
+
+#### `.push()`
+#### `.push(element1)`
+#### `.push(element1, element2)`
+#### `.push(element1, element2 /* ... */ elementN)`
+Appends elements to end of array.
+
+RETURNS length of altered array.
+
+ALTERS ORIGINAL ARRAY.
+```js
+[1, 2, 3].push(4, 5, 6) // 6
+```
+---
+
+#### `.reduce(callback)`
+#### `.reduce(callback, initialValue)`
+Reduces values of array down to one value from left to right.
+
+RETURNS reduced value.
+
+DOES NOT MUTATE ARRAY.
+```js
+[10, 20, 30].reduce((acc, val) => acc + val, 0) // 60
+```
+---
+
+#### `.reduceRight(callback)`
+#### `.reduceRight(callback, initialValue)`
+Reduces values of array down to one value from right to left.
+
+RETURNS reduced value.
+
+DOES NOT MUTATE ARRAY.
+```js
+[10, 20, 30].reduceRight((acc, val) => acc + val, 0) // 60
+```
+---
+
+#### `.reverse()`
+Reverses array in place.
+
+RETURNS reversed array.
+
+ALTERS ORIGINAL ARRAY.
+```js
+[1, 2, 3].reverse() // [3, 2, 1]
+```
+#### `.toReversed()`
+Reverses array in place without altering original
+
+RETURNS reversed array.
+
+DOES NOT MUTATE ARRAY.
+```js
+[1, 2, 3].toReversed() // [3, 2, 1]
+```
+---
+
+#### `.shift()`
+Removes and returns first element of array.
+
+RETURNS first element.
+
+ALTERS ORIGINAL ARRAY.
+```js
+[1, 2, 3].shift() // 1
+```
+---
+
+#### `slice()`
+#### `slice(start)`
+#### `slice(start, end)`
+Removes portion of array based on provided start and stop values.
+
+RETURNS sliced values.
+
+DOES NOT MUTATE ARRAY.
+```js
+[1, 2, 3, 4, 5].slice(2, 5) // [3, 4, 5]
+```
+---
+
+#### `.some(callback)`
+#### `.some(callback, args)`
+Checks if at least one element passes test.
+
+RETURNS boolean.
+
+DOES NOT MUTATE ARRAY.
+```js
+[1, 2, 3].some((num) => num > 1) // true
+```
+---
+
+#### `.sort()`
+#### `.sort(compareFn)`
+Sorts array based on comparison func.
+#### `.sort((a, b) => a - b) // ascending`
+#### `.sort((a, b) => b - a) // descending`
+
+RETURNS sorted array.
+
+ALTERS ORIGINAL ARRAY.
+```js
+[3, 2, 1].sort((a, b) => a - b) // [1, 2, 3]
+[1, 2, 3].sort((a, b) => b - a) // [3, 2, 1]
+
+```
+#### `.toSorted()`
+#### `.toSorted(compareFn)`
+Sorts array based on comparison func.
+#### `.toSorted((a, b) => a - b) // ascending`
+#### `.toSorted((a, b) => b - a) // descending`
+
+RETURNS sorted array. 
+
+DOES NOT MUTATE ARRAY.
+```js
+[3, 2, 1].toSorted((a, b) => a - b) // [1, 2, 3]
+[1, 2, 3].toSorted((a, b) => b - a) // [3, 2, 1]
+```
+---
+
+#### `.splice(start)`
+#### `.splice(start, deleteCount)`
+#### `.splice(start, deleteCount, item1)`
+#### `.splice(start, deleteCount, item1, item2)`
+#### `.splice(start, deleteCount, item1, item2 /*...*/ itemN)`
+Change element in array by removing/replacing/or adding new elements.
+
+RETURNS array of deleted items.
+
+ALTERS ORIGINAL ARRAY.
+```js
+[1, 2, 3, 4, 5].splice(3, 4) // [4, 5]
+```
+
+#### `.toSpliced(start)`
+#### `.toSpliced(start, deleteCount)`
+#### `.toSpliced(start, deleteCount, item1)`
+#### `.toSpliced(start, deleteCount, item1, item2)`
+#### `.toSpliced(start, deleteCount, item1, item2 /*...*/ itemN)`
+Change element in array by removing/replacing/or adding new elements.
+
+RETURNS array of deleted items.
+
+DOES NOT MUTATE ARRAY.
+```js
+[1, 2, 3, 4, 5].toSpliced(3, 4) // [4, 5]
+```
+---
+
+#### `.toString()`
+Returns string representing all elements in array.
+
+RETURNS string.
+
+DOES NOT MUTATE ARRAY.
+```js
+['c', 'a', 't'].toString() // ['c,a,t']
+```
+---
+
+#### `.unshift()`
+#### `.unshift(element1)`
+#### `.unshift(element1, element2)`
+#### `.unshift(element1, element2, /*...*/ elementN)`
+Add elements to beginning of array.
+
+RETURNS length of array 
+
+ALTERS ORIGINAL ARRAY.
+```js
+console.log([1, 2, 3].unshift(-2, -1, 0)) // 6
+```
+---
+
+#### `values()`
+Returns new array iterator that iterates over each value.
+
+RETURNS nothing.
+
+DOES NOT ALTER ARRAY.
+```js
+const iterator = ['A', 'B', 'C'].values() // Object [Array Iterator]
+
+for(let value of iterator) { console.log(value) } // 'A' 'B' 'C'
 ```
 ---

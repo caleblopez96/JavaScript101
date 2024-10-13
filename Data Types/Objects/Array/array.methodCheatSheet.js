@@ -28,7 +28,9 @@ console.log([1, 2, 3].concat([4, 5, 6])) // [ 1 ,2, 3, 4, 5, 6 ]
 // .entries() returns a new array iterator.
 // *RETURNS new array iterator* 
 // *DOES NOT MUTATE ARRAY*
-console.log([1, 2, 3].entries()) // [ Array Iterator ]
+const iterator = ['A', 'B', 'C'].entries() // Object [Array Iterator]
+
+for (let entry of iterator) { console.log(entry) } // [0, 'A'] [1, 'B'] [2, 'C']
 
 // .every(callback, args) checks if every element passes test.
 // *RETURNS boolean* 
@@ -88,7 +90,9 @@ console.log([1, 2, 3].join(' - ')) // '1 - 2 - 3'
 // .keys() returns array iterator that contains keys for each index in [1, 2, 3].
 // *RETURNS array iterator* 
 // *DOES NOT MUTATE ARRAY*
-console.log([1, 2, 3].keys()) // Object [Array Iterator]
+const keyIterator = ['A', 'B', 'C'].keys() // Object [Array Iterator]
+
+for (let keys of keyIterator) { console.log(keys) } // 0 1 2
 
 // .lastIndexOf() returns last index at which element can be found else -1.
 // *RETURNS last index of supplied element* 
@@ -179,4 +183,6 @@ console.log([3, 4, 5].unshift(1, 2)) // 5
 // .values() returns new array iterator that iterates over each value
 // *RETURNS nothing
 // *DOES NOT MUTATE ARRAY
-console.log([1, 2, 3].values()) // Object [Array Iterator]
+const valueIterator = ['A', 'B', 'C'].values() // Object [Array Iterator]
+
+for (let value of valueIterator) { console.log(value) } // 'A' 'B' 'C'
