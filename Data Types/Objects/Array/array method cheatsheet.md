@@ -14,7 +14,7 @@
 
 ### Return New Arrays
 - **`concat()`**: Joins two or more arrays.
-- **`slice()`**: Returns a portion of an array.
+- **`slice()`**: RETURNS a portion of an array.
 - **`filter()`**: Creates a new array with elements that pass a test.
 - **`map()`**: Creates a new array with the results of calling a function on every element.
 
@@ -23,17 +23,17 @@
 - **`reduceRight()`**: Reduces the array to a single value (right to left).
 
 ### Search/Find Elements
-- **`indexOf()`**: Returns the first index of an element.
-- **`lastIndexOf()`**: Returns the last index of an element.
+- **`indexOf()`**: RETURNS the first index of an element.
+- **`lastIndexOf()`**: RETURNS the last index of an element.
 - **`includes()`**: Checks if an array contains a specified element.
-- **`find()`**: Returns the first element that satisfies a condition.
-- **`findIndex()`**: Returns the index of the first element that satisfies a condition.
+- **`find()`**: RETURNS the first element that satisfies a condition.
+- **`findIndex()`**: RETURNS the index of the first element that satisfies a condition.
 
 ### Loop/Iterate
 - **`forEach()`**: Calls a function for each element.
-- **`entries()`**: Returns an iterator of key/value pairs.
-- **`keys()`**: Returns an iterator of the keys.
-- **`values()`**: Returns an iterator of the values.
+- **`entries()`**: RETURNS an iterator of key/value pairs.
+- **`keys()`**: RETURNS an iterator of the keys.
+- **`values()`**: RETURNS an iterator of the values.
 
 ### Transform/Order
 - **`reverse()`**: Reverses the array.
@@ -53,7 +53,7 @@
 ### Code Snippets
 
 #### `.at(index)`
-Returns the element at the specified index.
+RETURNS the element at the specified index.
 
 RETURNS element at index.
 ```js
@@ -127,7 +127,7 @@ DOES NOT MUTATE ARRAY.
 
 #### `.find(callback)`
 #### `.find(callback, args)`
-Returns first element if found else returns undefined.
+RETURNS first element if found else RETURNS undefined.
 
 RETURNS first element else undefined.
 
@@ -141,9 +141,9 @@ DOES NOT MUTATE ARRAY.
 ####  `.findIndex(callback, args)`
 Gets index of found element.
 
-RETURNS index
+RETURNS index.
 
-DOES NOT MUTATE ARRAY
+DOES NOT MUTATE ARRAY.
 ```js
 [1, 2, 3].findIndex(element => element == 3) // 2
 ```
@@ -151,4 +151,94 @@ DOES NOT MUTATE ARRAY
 
 #### `.flat()` 
 #### `.flat(depth)` 
-creates new array with sub-array elements concatenated
+Creates new array with sub-array elements concatenated.
+
+RETURNS new array.
+
+DOES NOT MUTATE ARRAY.
+```js
+[1, 2, 3, [4, 5, 6]].flat() // [1, 2, 3, 4, 5, 6] 
+```
+---
+
+#### `.forEach(callback)`
+#### `.forEach(callback, args)`
+Executes provided func once for each element in array.
+
+NO RETURN value.
+
+DOES NOT MUTATE ARRAY.
+```js
+[1, 2, 3].forEach(num => console.log(num * 2)) // 2 4 6
+```
+---
+#### `.includes(searchElement)`
+#### `.includes(searchElement, fromIndex)`
+Determines if array includes provided value.
+
+RETURNS boolean.
+
+DOES NOT MUTATE ARRAY.
+```js
+[1, 2, 3].includes(2) // true
+```
+---
+#### `.indexOf(searchElement)`
+#### `.indexOf(searchElement, fromIndex)`
+Return the first index of found element else -1.
+
+RETURNS index.
+
+DOES NOT MUTATE ARRAY.
+```js
+[1, 2, 3].indexOf(2) // 1
+```
+---
+#### `.join()`
+#### `.join(separator)`
+Creates new string of concatenated elements, joined by a separator.
+
+RETURNS string.
+
+DOES NOT MUTATE ARRAY. 
+```js
+[1, 2, 3].join(' - ') // 1 - 2 - 3
+```
+---
+
+#### `.keys()`
+Creates array iterator that contains keys for index.
+
+RETURNS array iterator.
+
+DOES NOT MUTATE ARRAY.
+```js
+const iterator = ['A', 'B', 'C'].keys() // Object [Array Iterator]
+
+for(let keys of iterator) { console.log(keys) } // 0 1 2
+```
+---
+
+#### `.lastIndexOf(searchElement)`
+#### `.lastIndexOf(searchElement, fromIndex)`
+RETURNS last index at which element can be found else -1.
+
+RETURNS index.
+
+DOES NOT MUTATE ARRAY.
+```js
+[3, 2, 3].lastIndexOf(3) // 2
+```
+---
+
+#### `.map(callback)`
+#### `.map(callback, args)`
+Creates new array with results of func called on each element.
+
+RETURNS new array
+
+DOES NOT MUTATE ARRAY.
+```js
+['a', 'b', 'c'].map((letter) => letter.toUpperCase()) // ['A', 'B', 'C'] 
+```
+---
