@@ -8,16 +8,16 @@
 - **`replaceAll()`**: Replaces all matches of pattern in string.
 
 ### Extract/Return Substrings
-- **`slice()`**: Extracts a section of a string and returns it.
-- **`substring()`**: Returns a part of the string between two indexes.
-- **`substr()`**: Returns a portion of the string with specified index.
+- **`slice()`**: Extracts a section of a string and RETURNS it.
+- **`substring()`**: RETURNS a part of the string between two indexes.
+- **`substr()`**: RETURNS a portion of the string with specified index.
 - **`split()`**: Splits a string into array of substrings based on separator.
 
-### Return New Arrays
-- **`concat()`**: Joins two or more arrays.
-- **`slice()`**: RETURNS a portion of an array.
-- **`filter()`**: Creates a new array with elements that pass a test.
-- **`map()`**: Creates a new array with the results of calling a function on every element.
+### Search/Find Strings
+- **`indexOf()`**: RETURNS first index where substring is found.
+- **`lastIndexOf()`**: RETURNS last index where substring is found.
+- **`includes()`**: Checks if a string contains specified substring.
+- **`startsWith()`**: Checks if a string starts with specified substring.
 
 ### Return a Single Value
 - **`reduce()`**: Reduces the array to a single value (left to right).
