@@ -23,6 +23,7 @@
 - **`reduceRight()`**: Reduces the array to a single value (right to left).
 
 ### Search/Find Elements
+-**`at()`**: RETURNS index of string character to be returned.
 - **`indexOf()`**: RETURNS the first index of an element.
 - **`lastIndexOf()`**: RETURNS the last index of an element.
 - **`includes()`**: Checks if an array contains a specified element.

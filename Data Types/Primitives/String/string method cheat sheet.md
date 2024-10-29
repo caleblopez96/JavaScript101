@@ -12,6 +12,7 @@
 - **`substring()`**: RETURNS a part of the string between two indexes.
 - **`substr()`**: RETURNS a portion of the string with specified index.
 - **`split()`**: Splits a string into array of substrings based on separator.
+- **`at()`**: RETURNS index of string character to be returned.
 
 ### Search/Find Strings
 - **`indexOf()`**: RETURNS first index where substring is found.
@@ -37,3 +38,20 @@
 - **`charCodeAt()`**: RETURNS the unicode of the character at specified index.
 - **`codePointAt()`**: RETURNS the code point value of character at specified index.
 - **`repeat()`**: RETURNS a new string with specified number of copies of original string.
+
+---
+
+### Code Snippets
+
+#### `.at(index)`
+Takes integer and returns item at that integers index
+
+RETURNS the item at index.
+
+DOES NOT MUTATE ARRAY.
+```js
+"hello".at(4) // o
+```
+---
+
+#### `charAt(index)`
