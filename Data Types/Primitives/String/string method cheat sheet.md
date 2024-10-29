@@ -44,7 +44,7 @@
 ### Code Snippets
 
 #### `.at(index)`
-Takes integer and returns item at that integers index
+Takes integer and returns item at that integers index.
 
 RETURNS the item at index.
 
@@ -55,3 +55,11 @@ DOES NOT MUTATE ARRAY.
 ---
 
 #### `charAt(index)`
+Returns a string consisting of UTF code at index.
+
+RETURNS string at index.
+
+DOES NOT MUTATE ARRAY.
+```js
+"hello".charAt(4) // o
+```
