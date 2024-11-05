@@ -63,3 +63,12 @@ DOES NOT MUTATE ARRAY.
 ```js
 "hello".charAt(4) // o
 ```
+
+---
+#### `concat()`
+#### `concat(str1)`
+#### `concat(str1, str2)`
+#### `concat(str1, str2 /* ... */ strN)`
+```js
+"Java".concat("Script") // JavaScript
+```
