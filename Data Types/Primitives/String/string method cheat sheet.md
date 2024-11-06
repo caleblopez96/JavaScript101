@@ -46,9 +46,10 @@
 #### `.at(index)`
 Takes integer and returns item at that integers index.
 
-RETURNS the item at index.
+RETURNS the string at index.
+RETURNS undefined if not found.
 
-DOES NOT MUTATE ARRAY.
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
 ```js
 "hello".at(4) // o
 ```
@@ -59,7 +60,7 @@ Returns a string consisting of UTF code at index.
 
 RETURNS string at index.
 
-DOES NOT MUTATE ARRAY.
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
 ```js
 "hello".charAt(4) // o
 ```
@@ -69,8 +70,25 @@ DOES NOT MUTATE ARRAY.
 #### `concat(str1)`
 #### `concat(str1, str2)`
 #### `concat(str1, str2 /* ... */ strN)`
+Merges strings together.
+
+RETURNS a NEW string concatenated.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
 ```js
 "Java".concat("Script") // JavaScript
+```
+
+---
+#### `endsWith(searchElement)`
+#### `endsWith(searchElement, endPosition)`
+Determines if string ends with specified string.
+
+RETURNS boolean.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"I love JavaScript".toLowerCase().endsWith("javascript")
 ```
 
 ---
@@ -81,8 +99,11 @@ DOES NOT MUTATE ARRAY.
 ```
 
 ---
-#### `endsWith(searchElement)`
-#### `endsWith(searchElement, endPosition)`
+#### `indexOf(searchString)`
+#### `indexOf(searchString, position)`
 ```js
-"I love JavaScript".toLowerCase().endsWith("javascript")
+"I love JavaScript".indexOf("love")
 ```
+
+---
+#### ``
