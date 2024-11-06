@@ -79,3 +79,10 @@ DOES NOT MUTATE ARRAY.
 ```js
 "JavaScript".includes("Java") // true
 ```
+
+---
+#### `endsWith(searchElement)`
+#### `endsWith(searchElement, endPosition)`
+```js
+"I love JavaScript".toLowerCase().endsWith("javascript")
+```
