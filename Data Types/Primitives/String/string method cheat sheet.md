@@ -72,3 +72,10 @@ DOES NOT MUTATE ARRAY.
 ```js
 "Java".concat("Script") // JavaScript
 ```
+
+---
+#### `includes(searchString)`
+#### `includes(searchString, position)`
+```js
+"JavaScript".includes("Java") // true
+```
