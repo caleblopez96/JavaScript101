@@ -177,4 +177,169 @@ DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE
 ```
 
 ---
-<!-- #### `replaceAll(pattern, replacement)` -->
+#### `replaceAll(pattern, replacement)`
+Returns a new string with all matches of a pattern (string or regex).
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"Love Hate Love Hate Love Hate".replaceAll("Hate", "Love") // "Love Love Love Love Love Love"
+```
+
+---
+#### `search(regexp)`
+Searches for a match between the string and a regexp, returning index for first match.
+
+RETURNS index of first match or -1 if not found.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+
+```
+
+---
+#### `slice(indexStart)`
+#### `slice(indexStart, indexEnd)
+Extracts a section of a string and returns it as new string.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+
+```js
+"I love JavaScript".slice(2, 6) // "love"
+```
+
+---
+#### `split(separator)`
+#### `split(separator, limit)`
+Takes a pattern(separator) and divides the string into an array.
+
+RETURNS array.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"the quick brown fox jumps over the lazy dog".split(" ") // ['the', 'quick', 'brown', 'fox', 'jumps', 'over', 'the', 'lazy', 'dog']
+```
+
+---
+#### `startsWith(searchString)`
+#### `startsWith(searchString, position)`
+Determines if string begins with searchString.
+
+RETURNS boolean.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"Its Friday Night".startsWith("Friday") // false
+"Its Friday Night".startsWith("Friday", 4) // true
+```
+
+---
+#### `substring(indexStart)`
+#### `substring(indexStart, indexEnd)`
+Returns the part of the string from the start index up to but
+not including the end index. end of string if no end is specified.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"JavaScript".substring(4) // 'Script'
+```
+
+---
+#### `toLocaleLowerCase()`
+#### `toLocaleLowerCase(locales)`
+Returns the string converted to lower case, according 
+to locale-specific mappings.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+
+```
+
+---
+#### `toLocaleUpperCase()`
+#### `toLocaleUpperCase(locales)`
+Returns the string converted to upper case, according 
+to locale-specific mappings.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+
+```
+
+---
+#### `toLowerCase()`
+Returns the string converted to lower case.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"JAVASCRIPT".toLowerCase() // "javascript"
+```
+
+---
+#### `toUpperCase()`
+Returns the string converted to upper case.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"javascript".toUpperCase() // "JAVASCRIPT"
+```
+
+---
+#### `trim()`
+Removes whitespace from both ends of string.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"    JavaScript     ".trim() // "JavaScript"
+```
+
+---
+#### `trimEnd()`
+#### `trimRight()`
+Removes whitespace from the end/right of the string.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"Javascript ".trimEnd() // "JavaScript"
+```
+
+---
+#### `trimStart()`
+#### `trimLeft()`
+Removes whitespace from the beginning/left of the string.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+" JavaScript".trimStart() // "JavaScript"
+```
+
+---
+#### `valueOf()`
+Returns the string value.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+const str = new String("Hello world") // { "Hello world" }
+str.valueOf() // "Hello world"
+```

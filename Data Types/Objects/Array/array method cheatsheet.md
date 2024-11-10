@@ -126,8 +126,8 @@ DOES NOT MUTATE ARRAY.
 ```js
 [1, 2, 3].filter((num) => num > 1) // [2, 3]
 ```
----
 
+---
 #### `.find(callback)`
 #### `.find(callback, args)`
 RETURNS first element if found else RETURNS undefined.
