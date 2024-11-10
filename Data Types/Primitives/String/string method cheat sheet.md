@@ -94,6 +94,11 @@ DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
 ---
 #### `includes(searchString)`
 #### `includes(searchString, position)`
+Performs case-sensitive search for given string.
+
+RETURNS boolean.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
 ```js
 "JavaScript".includes("Java") // true
 ```
@@ -101,9 +106,75 @@ DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
 ---
 #### `indexOf(searchString)`
 #### `indexOf(searchString, position)`
+Searches string and returns index of first occurrence of string.
+
+RETURNS the index of first occurrence or -1 if not found.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
 ```js
-"I love JavaScript".indexOf("love")
+"I love JavaScript".indexOf("love") // 2
 ```
 
 ---
-#### ``
+#### `lastIndexOf(searchString)`
+#### `lastIndexOf(searchString, position)`
+Searches string and returns index of last occurrence of string.
+
+RETURNS the index of last occurrence or -1 if not found.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"JavaScript Python JavaScript".toLowerCase().lastIndexOf("javascript") // 18
+```
+
+---
+#### `padEnd(targetLength)`
+#### `padEnd(targetLength, padString)`
+Pads the string with supplied string at end of string.
+
+RETURNS newly padded string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"JavaScript".padEnd(15, "*") // JavaScript*****
+```
+
+---
+#### `padStart(targetLength)`
+#### `padStart(targetLength, padString)`
+Pads the string with supplied string at start of string.
+
+RETURNS newly padded string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+"JavaScript".padStart(15, "*") // *****JavaScript
+```
+
+---
+#### `repeat(count)`
+Creates a new string which containing item to repeat.
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE.
+```js
+const emotion = "Love! "
+console.log(`I ${emotion.repeat(3)}JavaScript`) // I Love! Love! Love! JavaScript
+```
+
+---
+#### `replace(pattern, replacement)`
+##### `pattern - string or regex that you want replaced`
+##### `replacement - string or regex that you want to replace it with`
+Returns a new string with one, some, or all matches of a pattern (string or regex).
+
+RETURNS new string.
+
+DOES NOT MUTATE STRING. STRINGS ARE IMMUTABLE
+```js
+"Testing the replace method".replace("Testing", "Studying") // Studying the replace method.
+```
+
+---
+<!-- #### `replaceAll(pattern, replacement)` -->
