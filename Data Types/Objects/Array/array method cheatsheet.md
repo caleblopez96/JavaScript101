@@ -2,7 +2,6 @@
 
 ### Modify or Add Elements
 - **`push()`**: Adds elements to the end of an array.
-- **`unshift()`**: Adds elements to the beginning of an array.
 - **`splice()`**: Adds/removes/replaces elements in an array.
 - **`fill()`**: Fills elements in an array with a static value.
 - **`copyWithin()`**: Copies part of an array to another location.
@@ -14,7 +13,7 @@
 
 ### Return New Arrays
 - **`concat()`**: Joins two or more arrays.
-- **`slice()`**: RETURNS a portion of an array.
+- **`slice()`**: Creates a new array with a portion of the original array.
 - **`filter()`**: Creates a new array with elements that pass a test.
 - **`map()`**: Creates a new array with the results of calling a function on every element.
 
@@ -23,7 +22,7 @@
 - **`reduceRight()`**: Reduces the array to a single value (right to left).
 
 ### Search/Find Elements
--**`at()`**: RETURNS index of string character to be returned.
+- **`at()`**: RETURNS the element at the specified index (supports negative indexing).
 - **`indexOf()`**: RETURNS the first index of an element.
 - **`lastIndexOf()`**: RETURNS the last index of an element.
 - **`includes()`**: Checks if an array contains a specified element.
@@ -300,12 +299,12 @@ Reverses array in place.
 
 RETURNS reversed array.
 
-ALTERS ORIGINAL ARRAY.
+MUTATES ORIGINAL ARRAY.
 ```js
 [1, 2, 3].reverse() // [3, 2, 1]
 ```
 #### `.toReversed()`
-Reverses array in place without altering original
+Creates a new reversed array without modifying the original array.
 
 RETURNS reversed array.
 
@@ -329,7 +328,7 @@ ALTERS ORIGINAL ARRAY.
 #### `slice()`
 #### `slice(start)`
 #### `slice(start, end)`
-Removes portion of array based on provided start and stop values.
+Creates a new array with a portion of the original array.
 
 RETURNS sliced values.
 
