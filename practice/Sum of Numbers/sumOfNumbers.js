@@ -10,4 +10,4 @@ function sumOfNums(array) {
 }
 
 console.log(sumOfNums([1, 2, 3, 4])) // 10
-console.log(sumOfNums([5, 10, 15]))//
+console.log(sumOfNums([5, 10, 15])) //
