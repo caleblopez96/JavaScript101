@@ -6,7 +6,7 @@ function findLongestWord(sentence) {
     if (word.length > longestWord.length) {
       longestWord = word
     }
-  });
+  })
   return longestWord
 }
 console.log(findLongestWord('what is the longest word')) // 'longest
