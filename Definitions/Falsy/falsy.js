@@ -3,10 +3,10 @@
 // List of JavaScript falsy values:
 false
 0
--0 
+  - 0
 0n
-"" 
-null 
-undefined 
+""
+null
+undefined
 NaN
 document.all
