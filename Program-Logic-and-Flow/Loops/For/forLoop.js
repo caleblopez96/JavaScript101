@@ -6,10 +6,10 @@
 
 // SYNTAX:
 for (initialization; condition; update) {
-    // Code to be executed in each iteration
-    }
+  // Code to be executed in each iteration
+}
 
 // EXAMPLE:
-for (var i = 1; i <= 5; i++) {
-    console.log(i); // 1 2 3 4 5
+for (let i = 1; i <= 5; i++) {
+  console.log(i); // 1 2 3 4 5
 }
