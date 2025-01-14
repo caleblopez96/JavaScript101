@@ -3,14 +3,19 @@
 // returns each key-value pair in an array
 
 // SYNTAX:
-// for(variable of iterable) {}
+/* 
 
+for(element of iterable) {
+  console.log(element)
+}
+
+*/
 // EXAMPLE:
 
 // array
 const names = ['Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Fiona', 'George', 'Hannah', 'Isaac', 'Jack'];
 for (name of names) {
-  console.log(name)
+  console.log(name) // 'Alice', 'Bob', 'Charlie', 'David', 'Eve', 'Fiona', 'George', 'Hannah', 'Isaac', 'Jack'
 }
 
 // string
