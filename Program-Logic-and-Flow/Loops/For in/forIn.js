@@ -16,7 +16,3 @@ for (key in person) {
 for (key in person) {
   console.log(key, person[key]) // firstName John age 30
 }
-
-for (let key in Object.keys(object)) {
-  console.log(key, key[value])
-}
