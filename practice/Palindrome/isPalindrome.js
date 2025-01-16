@@ -3,4 +3,4 @@ function isPalindrome(string) {
 }
 
 console.log(isPalindrome('racecar')) // true
-console.log(isPalindrome('taco')) // false
+console.log(isPalindrome('taco')) // false 
