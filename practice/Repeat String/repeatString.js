@@ -4,4 +4,4 @@ function repeatString(string, number) {
   return string.repeat(number)
 }
 
-console.log(repeatString("Hello", 3))
+console.log(repeatString("Hello", 3)) // "HelloHelloHello

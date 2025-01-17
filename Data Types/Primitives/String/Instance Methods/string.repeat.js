@@ -2,7 +2,7 @@
 
 // SYNTAX:
 // .repeat(count)
-// string.repeat(3)
+
 
 // EXAMPLE:
-console.log("JavaScript ".repeat(3))
+"JavaScript ".repeat(3) // 'JavaScript JavaScript JavaScript'
