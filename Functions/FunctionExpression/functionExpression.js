@@ -5,8 +5,8 @@
 // https://developer.mozilla.org/en-US/docs/web/JavaScript/Reference/Operators/function
 
 // EXAMPLE:
-const addition = function(...numbers) {
-    return numbers.reduce((sum, num) => sum + num);
+const addition = function (...numbers) {
+  return numbers.reduce((sum, num) => sum + num);
 }
 
 console.log(addition(1, 2, 3, 4)); // 10
