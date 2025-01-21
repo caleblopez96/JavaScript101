@@ -2,7 +2,8 @@
 // and returns an integer of the specified radix
 // (the base in mathematical numeral systems).
 
-parseFloat(string)
+// SYNTAX:
+// parseFloat(string)
 
 const customerOutput = '123'
 parseFloat(customerInput); // 123
