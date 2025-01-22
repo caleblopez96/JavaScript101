@@ -1,9 +1,10 @@
 // use a map instead of a plain object 
 // if you need to add or delete keys frequently.
 
-// map's performance is better than 
-// regular objects when adding and deleting 
-// keys frequently.
+// A Map is similar to an object in that it stores key - value pairs.
+// Unlike objects, Map keys can be any data type(e.g., objects, functions, or primitives).
+// Map provides better performance for frequent additions, deletions, or lookups of key - value pairs.
+// It also maintains the order of insertion, unlike regular objects.
 
 const eventsMap = new Map();
 eventsMap.set('1', 'a');

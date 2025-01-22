@@ -13,10 +13,10 @@
 // as values inside of a set can only occur once.
 
 // use the 'Set' constructor to initialize a set with a variable such as an array
-let mySet = new Set([ 1, 2, 3, 4, 5 ]);
+let mySet = new Set([1, 2, 3, 4, 5]);
 
 // add a value to your set by using the 'add' method
-mySet.add(6); 
+mySet.add(6);
 console.log(mySet); // Set(6) {1, 2, 3, 4, 5, 6}
 
 // delete a value from your set by using the 'delete' method
@@ -28,22 +28,22 @@ mySet.has(2); // true
 mySet.has(6); // false
 
 // iterate through sets using 'for...of' loops
-for(let value of mySet) {
-    console.log(value); // 1 2 3 4 5
+for (let value of mySet) {
+  console.log(value); // 1 2 3 4 5
 }
 
 // get the size of a set using the 'size' property
 console.log(mySet.size); // 5
 
 // combine sets using the spread operator
-let setA = new Set([ 1, 2, 3 ]);
-let setB = new Set([ 4, 5, 6 ]);
+let setA = new Set([1, 2, 3]);
+let setB = new Set([4, 5, 6]);
 
-let combinedSets = new Set([ ...setA, ...setB ]);
+let combinedSets = new Set([...setA, ...setB]);
 console.log(combinedSets); // 1 2 3 4 5 6
 
 // remove duplicate values from array
-let removedDuplicates = new Set([ 1, 2, 3, 2, 5, 6, 3 ]);
+let removedDuplicates = new Set([1, 2, 3, 2, 5, 6, 3]);
 console.log(removedDuplicates);
 
 // creating a copy of the original array
