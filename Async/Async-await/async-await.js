@@ -7,7 +7,7 @@
 // With ASYNC...AWAIT
 async function fetchData() {
   try {
-    const response = await fetch('https://swapi.dev/api/planets/')
+    const response = await fetch('URL_HERE');
     const data = await response.json()
     for (let planet of data.results) {
       console.log(planet.name)
@@ -17,15 +17,18 @@ async function fetchData() {
   }
 }
 
+// Call the function to initiate the API request
+fetchData()
+
 // Without ASYNC...AWAIT
-async function fetchData() {
-  return fetch('URL_HERE')
-    .then((response) => response.json())
+function fetchData() {
+  fetch('URL_HERE')
+    .then((response) => response.json()) // handles response and JSON parse
     .then((data) => {
-      // Handle data here
-      console.log(data);
+      console.log(data)
     })
-    .catch((error) => console.log(error)); // Handle errors
+    .catch((error) => console.log(error)) // Catch and log any errors
 }
 
-fetchData();
+// Call the function to initiate the API request
+fetchData()
