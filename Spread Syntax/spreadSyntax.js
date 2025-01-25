@@ -11,8 +11,10 @@
 // Trailing commas are not allowed after the rest parameter.
 // The rest parameter cannot have a default value.
 
-// Spread syntax looks exactly like rest syntax.In a way, spread syntax is the opposite of rest syntax.
-// Spread syntax "expands" an array into its elements, while rest syntax collects multiple elements and "condenses" them into a single element.
+// Spread syntax looks exactly like rest syntax.
+// In a way, spread syntax is the opposite of rest syntax.
+// Spread syntax "expands" an array into its elements,
+// while rest syntax collects multiple elements and "condenses" them into a single element.
 
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
 
