@@ -5,3 +5,5 @@
 // variables declared with const are block scoped.
 
 const shoeSize = 10.5;
+
+const PI = 3.14;
