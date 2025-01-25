@@ -5,11 +5,6 @@
 // [1, ...iterableObj, '4', 'five', 6]
 // { ...obj, key: 'value' }
 
-//* Notes *: 
-// A function definition can only have one rest parameter.
-// The rest parameter must be the last parameter in the function definition.
-// Trailing commas are not allowed after the rest parameter.
-// The rest parameter cannot have a default value.
 
 // Spread syntax looks exactly like rest syntax.
 // In a way, spread syntax is the opposite of rest syntax.
