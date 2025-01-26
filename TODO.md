@@ -5,3 +5,5 @@ add setTimeOut()
 add clearInterval()
 
 complete window methods in dom
+
+complete modyfing dom folder in dom
