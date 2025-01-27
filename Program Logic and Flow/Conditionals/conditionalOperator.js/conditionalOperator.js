@@ -8,9 +8,9 @@
 // SYNTAX:
 // condition ? exprIfTrue : exprIfFalse
 
-const votingAge = 18;
+function oldEnoughToVote(age) {
+  return age >= 18 ? 'You are eligible to vote' : 'You are not eligible to vote'
+}
 
-let message = (votingAge >= 18) ? 'You are eligible to vote' : 'You are not eligible to vote';
-
-console.log(message); // You are eligible to vote
-
+console.log(oldEnoughToVote(12)) // You are not eligible to vote
+console.log(oldEnoughToVote(18)) // You are eligible to vote
