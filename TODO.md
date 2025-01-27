@@ -6,4 +6,4 @@ add clearInterval()
 
 complete window methods in dom
 
-complete modyfing dom folder in dom
+complete modifying dom folder in dom

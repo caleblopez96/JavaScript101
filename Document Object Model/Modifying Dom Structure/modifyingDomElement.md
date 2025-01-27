@@ -1,0 +1,4 @@
+element.outerhtml
+element.innerhtml
+element.textcontent
+element.style

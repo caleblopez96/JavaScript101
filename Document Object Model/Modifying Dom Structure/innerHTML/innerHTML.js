@@ -7,4 +7,3 @@ const htmlContent = element.innerHTML;
 
 // EXAMPLE: setting HTML content
 element.innerHTML = '<p> I am a paragraph </p>';
-
