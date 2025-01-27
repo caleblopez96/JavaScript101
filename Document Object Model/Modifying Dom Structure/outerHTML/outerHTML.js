@@ -4,11 +4,11 @@
 // element.outerHTML
 
 // EXAMPLE:
-<ul>
-  <li>A</li>
-  <li>B</li>
-  <li>C</li>
-</ul>
+// <ul>
+//   <li>A</li>
+//   <li>B</li>
+//   <li>C</li>
+// </ul>
 
 const unorderedList = document.querySelector("ul")
 
