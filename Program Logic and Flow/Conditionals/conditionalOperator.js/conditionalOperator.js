@@ -1,12 +1,9 @@
-// Operator that takes three operands: 
-// a condition followed by a question mark (?), 
-// then an expression to execute if the condition is truthy 
-// followed by a colon (:), 
-// and finally the expression to execute if the condition is falsy. 
-// This operator is frequently used as an alternative to an if...else statement.
+// syntactic sugar of if else statement
 
 // SYNTAX:
 // condition ? exprIfTrue : exprIfFalse
+
+// EXAMPLE:
 
 function oldEnoughToVote(age) {
   return age >= 18 ? 'You are eligible to vote' : 'You are not eligible to vote'
@@ -14,3 +11,6 @@ function oldEnoughToVote(age) {
 
 console.log(oldEnoughToVote(12)) // You are not eligible to vote
 console.log(oldEnoughToVote(18)) // You are eligible to vote
+
+// REFERENCE:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_operator
