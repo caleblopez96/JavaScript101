@@ -4,7 +4,7 @@
 // When fetching data from an API that returns JSON,
 // you should parse the JSON response to interact with the data.
 
-//** If possible, you should be using ASYNC / AWAIT with try / catch for asynchronous operations
+//** If possible, you should be using ASYNC/AWAIT with a try/catch block for asynchronous operations
 
 // EXAMPLE: 
 fetch('URL_HERE')

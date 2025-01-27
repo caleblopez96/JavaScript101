@@ -15,32 +15,32 @@
 
 // SYNTAX:
 const promiseSyntax = new Promise((resolve, reject) => {
-    // 
+  // 
 });
 
 // EXAMPLE: CREATING A PROMISE
 function fetchData(url) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-        //
-        }, timeout);
-    })
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      //
+    }, timeout);
+  })
 }
 const url = 'https://api.example.com'
 fetchData(url)
-.then(response => response.json())
-.then((data) => {
-  // Handle successful resolution
+  .then(response => response.json())
+  .then((data) => {
+    // Handle successful resolution
     console.log("Promise resolved with:", data);
-})
-.catch((error) => {
-  // Handle rejection
-  console.log("Promise rejected:", error);
-})
-.finally(() =>{
-  // Execute code regardless of resolution or rejection
+  })
+  .catch((error) => {
+    // Handle rejection
+    console.log("Promise rejected:", error);
+  })
+  .finally(() => {
+    // Execute code regardless of resolution or rejection
     console.log("Promise settled");
-})
+  })
 
 
 
@@ -53,9 +53,9 @@ const randomPromise = new Promise((resolve, reject) => {
   }, 5000)
 });
 randomPromise
-.then(() => {
-  console.log("number greater than 0.5, promise resolved");
-})
-.catch(() => {
-  console.log("number less than 0.5, promise rejected");
-})
+  .then(() => {
+    console.log("number greater than 0.5, promise resolved");
+  })
+  .catch(() => {
+    console.log("number less than 0.5, promise rejected");
+  })
