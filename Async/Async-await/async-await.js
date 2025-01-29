@@ -4,14 +4,12 @@
 
 // you cannot use await without async.
 
-// With ASYNC...AWAIT
+// With ASYNC...AWAIT with TRY/CATCH
 async function fetchData() {
   try {
     const response = await fetch('URL_HERE');
     const data = await response.json()
-    for (let planet of data.results) {
-      console.log(planet.name)
-    }
+    console.log(data)
   } catch (error) {
     console.log(error)
   }
