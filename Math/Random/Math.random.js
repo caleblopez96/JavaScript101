@@ -22,3 +22,6 @@ console.log(getRandomInt(1));
 
 console.log(Math.random());
 // Expected output: a number from 0 to <1
+
+// EXAMPLE: 
+console.log(Math.floor(Math.random() * 10)) //
