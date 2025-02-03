@@ -1,6 +1,7 @@
 // performs addition on the two operands and assigns the result to the left operand.
 
-// EXAMPLE:
+// EXAMPLE: a = a + 3
+// a += 3
 
 let a = 3;
 console.log(a += 3); // 6

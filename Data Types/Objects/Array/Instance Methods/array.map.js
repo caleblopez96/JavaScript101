@@ -15,15 +15,16 @@
 // Create a new array that only includes the descriptions of each task
 
 const tasks = [
-  { description: 'Finish portfolio', completed: true },
+  { description: 'Finish portfolio', completed: false },
   { description: 'Buy groceries', completed: false },
   { description: 'Reply to emails', completed: true },
   { description: 'Workout', completed: false },
   { description: 'Study JavaScript', completed: true }
 ];
 
-let descriptions = tasks.map((task) => {
-  return task.description
-})
-
+let descriptions = tasks.map((task) => (task.description))
 console.log(descriptions) // ['Finish portfolio', 'Buy groceries', 'Reply to emails', 'Workout', 'Study JavaScript']
+
+let isCompleted = tasks.map((task) => task.completed)
+console.log(isCompleted) // [false, false, true, false, true]
+
