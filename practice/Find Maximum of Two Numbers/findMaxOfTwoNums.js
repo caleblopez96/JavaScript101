@@ -13,3 +13,5 @@ function maxOfTwoNums(num1, num2) {
 function maxOfTwoNums(num1, num2) {
   return num1 > num2 ? num1 : num2
 }
+
+console.log(maxOfTwoNums(5, 13)) // 13
