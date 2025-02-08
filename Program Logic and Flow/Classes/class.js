@@ -1,15 +1,12 @@
 // classes are templates for creating objects.
 
-
-// EXAMPLE: 
+// EXAMPLE:
 class Person {
   constructor(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
   }
-  methodName() {
-
-  }
+  methodName() {}
 }
 
-console.log(new Person('Caleb', 'Lopez')); // Person {firstName: 'caleb', lastName: 'Lopez'}
+console.log(new Person("Caleb", "Lopez")); // Person {firstName: 'caleb', lastName: 'Lopez'}
