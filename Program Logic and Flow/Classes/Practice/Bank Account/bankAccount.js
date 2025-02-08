@@ -1,3 +1,7 @@
+// Create a BankAccount class that allows the user to enter their account number and account name.
+
+// then create instance methods to deposit and withdraw
+
 class BankAccount {
   constructor(accountNumber, accountHolder, balance = 0) {
     this.accountNumber = accountNumber;
