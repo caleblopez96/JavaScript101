@@ -1,14 +1,16 @@
-// classes are templates for creating objects.
+// A constructor is a function used to create and initialize objects.
+// When you define a constructor inside a class or a function, it allows you to pass in arguments and assign them to properties when creating an instance of the object.
 
-// EXAMPLE:
-class Person {
-  constructor(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+// SYNTAX:
+class className {
+  constructor(param1, param2) {
+    this.param1 = param1;
+    this.param2 = param2;
+  }
+  defineMethod() {
+    return "";
   }
 }
-
-let me = new Person("Caleb", "Lopez"); // Person {firstName: 'caleb', lastName: 'Lopez'}
 
 // EXAMPLE 2a: with a constructor:
 class Triangle {
