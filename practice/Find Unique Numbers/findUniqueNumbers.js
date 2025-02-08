@@ -4,12 +4,12 @@
 // Example Input: uniqueNumber([2, 3, 5, 3, 2])
 // Example Output: 5
 
-const givenArray = [2, 3, 5, 3, 2]
+const givenArray = [2, 3, 5, 3, 2];
 
 function findUniqueNumbers(array) {
-  return array.forEach(element => {
-    return element
+  return array.forEach((element) => {
+    return element;
   });
 }
 
-console.log(findUniqueNumbers(givenArray))
+console.log(findUniqueNumbers(givenArray));

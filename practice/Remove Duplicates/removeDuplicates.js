@@ -1,4 +1,4 @@
 function removeDuplicates(string) {
-  return [...new Set(string)].join('')
+  return [...new Set(string)].join("");
 }
-console.log(removeDuplicates('faang')) // fang
+console.log(removeDuplicates("faang")); // fang

@@ -1,14 +1,14 @@
 // create a function to find the longest word in a sentence
 
 function findLongestWord(sentence) {
-  const word = sentence.split(' ')
-  let longestWord = ''
+  const word = sentence.split(" ");
+  let longestWord = "";
 
-  word.forEach(word => {
+  word.forEach((word) => {
     if (word.length > longestWord.length) {
-      longestWord = word
+      longestWord = word;
     }
-  })
-  return longestWord
+  });
+  return longestWord;
 }
-console.log(findLongestWord('what is the longest word')) // 'longest
+console.log(findLongestWord("what is the longest word")); // 'longest

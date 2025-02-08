@@ -1,6 +1,6 @@
 function removeVowels(string) {
-  const stringWithoutVowels = string.replace(/[aeiouAEIOU]/g, '');
+  const stringWithoutVowels = string.replace(/[aeiouAEIOU]/g, "");
   return stringWithoutVowels;
 }
 
-removeVowels('dog'); // 'dg'
+removeVowels("dog"); // 'dg'
