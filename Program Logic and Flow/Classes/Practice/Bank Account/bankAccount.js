@@ -8,7 +8,7 @@ class BankAccount {
   deposit(amount) {
     if (amount > 0) {
       this.balance += amount;
-      console.log(`You deposited $${amount}. New balance is: ${this.balance}`);
+      console.log(`You deposited $${amount}. New balance is: ${this.balance}.`);
     } else {
       console.log(`Can't deposit a negative amount.`);
     }
@@ -20,7 +20,7 @@ class BankAccount {
     } else {
       this.balance -= amount;
       console.log(
-        `You withdrew $${amount}. Your new balance is $${this.balance}`
+        `You withdrew $${amount}. Your new balance is $${this.balance}.`
       );
     }
   }
