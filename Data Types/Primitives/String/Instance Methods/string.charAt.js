@@ -1,15 +1,15 @@
-// use the charAt() methodto retrieve the character at a specified 
+// use the charAt() method to retrieve the character at a specified
 // position (index) within a string.
 
-// EXAMPLE: 
+// EXAMPLE:
 // returns the character at a specific index in a string.
-'Javascript'.charAt(2); // v
+"Javascript".charAt(2); // v
 
-
+// EXAMPLE: First and last initial
 function firstAndLastInitial(firstName, lastName) {
-    let firstIntial = firstName.charAt(0);
-    let lastInitial = lastName.charAt(0);
-    let final = `${firstIntial + lastInitial}`;
-    return final;
+  let firstInitial = firstName.charAt(0);
+  let lastInitial = lastName.charAt(0);
+  let final = `${firstInitial + lastInitial}`;
+  return final;
 }
-firstAndLastInitial('Caleb', 'Lopez'); // 'CL'
+console.log(firstAndLastInitial("Caleb", "Lopez")); // 'CL'

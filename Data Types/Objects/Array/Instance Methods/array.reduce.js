@@ -13,16 +13,14 @@
 }); // 25
 
 const cartItems = [
-  { name: 'Item 1', price: 10 },
-  { name: 'Item 2', price: 15 },
-  { name: 'Item 3', price: 20 }
-]
+  { name: "Item 1", price: 10 },
+  { name: "Item 2", price: 15 },
+  { name: "Item 3", price: 20 },
+];
 
 const totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
 
 console.log(`Total Price: $${totalPrice}`); // Total Price: $45
-
-
 
 // REFERENCE:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
