@@ -43,3 +43,9 @@ myTriangle.a = 3;
 myTriangle.b = 4;
 myTriangle.getArea(); // 6
 myTriangle.getHypotenuse(); // 5
+
+function printName(string) {
+  return string.split("").sort().join("");
+}
+console.log(printName("node"));
+console.log(printName("abcel"));
