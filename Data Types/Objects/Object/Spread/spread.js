@@ -1,8 +1,11 @@
-// the spread syntax "expands" an array into its elements
+// use the spread operator to unpack values of an object
+
+// SYNTAX:
+// ...array
 
 // EXAMPLE:
-// unpacking values from temperatures variable
-const temperatures = [50, 70, 90, 85, 66]
-console.log(temperatures) //
-console.log(...temperatures) //
-
+const obj = {
+  a: 1,
+  b: 2,
+};
+console.log({ ...obj }); // {a: 1, b: 2}
