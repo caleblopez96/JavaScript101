@@ -1,5 +1,8 @@
 // A constructor is a function used to create and initialize objects.
+
 // When you define a constructor inside a class or a function, it allows you to pass in arguments and assign them to properties when creating an instance of the object.
+
+// if the properties are required from the start, using a constructor is preferred
 
 // SYNTAX:
 class className {
