@@ -1,5 +1,7 @@
 // classes are templates for creating objects.
 
+// access properties inside the object with object.propertyName or object[propertyName]
+
 // EXAMPLE:
 class Person {
   constructor(firstName, lastName) {
@@ -9,6 +11,17 @@ class Person {
 }
 
 let me = new Person("Caleb", "Lopez"); // Person {firstName: 'caleb', lastName: 'Lopez'}
+// dot notation
+console.log(me.firstName); // "Caleb"
+console.log(me.lastName); // "Lopez"
+
+// bracket notation
+console.log(me["firstName"]); // "Caleb"
+console.log(me["lastName"]); // "Lopez"
+
+// bracket notation with variable
+let key = "firstName";
+console.log(me[key]); // "Caleb"
 
 // EXAMPLE 2a: with a constructor:
 class Triangle {
@@ -26,7 +39,7 @@ class Triangle {
 
 const t = new Triangle(3, 4);
 t.getArea(); // 6
-t.getHypotenuse; // 5
+t.getHypotenuse(); // 5
 
 // EXAMPLE 2b: without a constructor
 class Triangle2 {
