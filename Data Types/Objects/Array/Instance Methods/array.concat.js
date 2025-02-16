@@ -20,4 +20,4 @@ function arrayConcatenate(...arrays) {
   return [].concat(...arrays);
 }
 
-console.log(arrayConcatenate(array1, array2, arrayA, arrayB)); //
+console.log(arrayConcatenate(array1, array2, arrayA, arrayB)); // [1, 2, 3, 4, 5, 6, "a", "b", "c" "d", "e", "f"]
