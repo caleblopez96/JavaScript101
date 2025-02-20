@@ -1,14 +1,14 @@
-// Use .forEach() to iterate over elements
-// in an array and apply a function to each element.
+// .forEach() iterates over elements in an array and applies a callback function to each element.
 
 // SYNTAX:
 // .forEach(callbackFn)
 // .forEach(callbackFn, thisArg)
+// .forEach((element, index, array) => {}, thisArg) no access to 'this'
+// .forEach(function (element, index, array) {}, thisArg); access to 'this'
 
 // PARAMETERS:
 // element – The current element being processed (required).
 // index (optional) – The index of the current element.
-// array (optional) – The full array .find() was called on.
 // thisArg (optional) – A value to use as `this` inside callbackFn.
 
 // RETURNS:
