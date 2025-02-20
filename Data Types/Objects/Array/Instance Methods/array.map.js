@@ -1,4 +1,4 @@
-// returns new array containing results
+// .map() returns new array containing results
 // after applying a function.
 //! returns NEW array. Doesn't mutate original array.
 
@@ -26,3 +26,6 @@ console.log(descriptions); // ['Finish portfolio', 'Buy groceries', 'Reply to em
 
 let isCompleted = tasks.map((task) => task.completed);
 console.log(isCompleted); // [false, false, true, false, true]
+
+// REFERENCE:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map
