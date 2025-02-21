@@ -1,9 +1,8 @@
-// use .every() when you need to check if all
-// elements in the array pass the test.
+// .every() checks if all elements in an array pass a test and returns a boolean.
 
 // SYNTAX:
-// .every(callbackFn)
-// .every(callbackFn, thisArg)
+// array.every(callbackFn)
+// array.every(callbackFn, thisArg)
 
 // PARAMETERS:
 // element – The current element being processed.
@@ -11,12 +10,12 @@
 // array (optional) – The array .every() was called on.
 
 // RETURNS:
-// boolean
+// true if all elements pass the test, otherwise false.
 
 // MUTATION:
-// does NOT mutate original array
+// Does NOT mutate the original array.
 
-// EXAMPLE:
+// EXAMPLE 1: check if all numbers are even
 const everyArray = [1, 2, 3, 4, 5];
 
 function isEven(element) {
@@ -25,7 +24,7 @@ function isEven(element) {
 
 console.log(everyArray.every(isEven)); // false
 
-// EXAMPLE 2:
+// EXAMPLE 2: checking if all tasks are completed
 const task = [
   { id: 1, title: "Task 1", completed: true },
   { id: 2, title: "Task 2", completed: true },
@@ -36,11 +35,11 @@ const completedTask = task.every((task) => task.completed);
 
 console.log(completedTask); // false
 
-// EXAMPLE 3:
+// EXAMPLE 3: using all parameters in the callback
 const numbers = [2, 4, 6, 8];
 
 const allEven = numbers.every((num, index, arr) => {
-  console.log(`Checking ${num}, at ${index}, in ${arr}`);
+  console.log(`Checking ${num}, at index ${index}, in [${arr}]`);
   return num % 2 === 0;
 });
 

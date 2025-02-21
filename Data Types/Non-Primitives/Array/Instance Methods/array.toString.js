@@ -11,3 +11,10 @@
 
 // MUTATION:
 // does NOT mutate original array
+
+// EXAMPLE:
+const iLoveJavaScript = ["I", "Love", "JavaScript"].toString();
+console.log(iLoveJavaScript); // 'I,Love,JavaScript'
+
+// REFERENCE:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString

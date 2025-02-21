@@ -1,24 +1,30 @@
-// .fill() changes all elements with a range
+// .fill() replaces elements in an array with a specified value within a range.
 
 // SYNTAX:
-// .fill(value)
-// .fill(value, start)
-// .fill(value, start, end)
+// array.fill(value)
+// array.fill(value, start)
+// array.fill(value, start, end)
 
 // PARAMETERS:
-// value - The value to fill
-// start (optional) - index at which to start filling
-// end (optional) - index to end filling
+// value - The value to fill the array with.
+// start (optional) - The index to start filling (default is 0).
+// end (optional) - The index to stop filling (exclusive, default is array.length).
 
 // RETURNS:
-// the original array modified
+// The modified original array.
 
 // MUTATION:
-// mutates original array
+// Modifies the original array in place.
 
-// EXAMPLE:
-const example = [1, 2, 3, "a", 5];
-example.fill(4, 3, 4); // [1, 2, 3, 4, 5]
+// EXAMPLE 1: filling the entire array
+const arr1 = [1, 2, 3, 4, 5];
+arr1.fill(0);
+console.log(arr1); // [0, 0, 0, 0, 0]
+
+// EXAMPLE 2: filling from index 2 to the end
+const arr2 = [1, 2, 3, 4, 5];
+arr2.fill(9, 2);
+console.log(arr2); // [1, 2, 9, 9, 9]
 
 // REFERENCE:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill

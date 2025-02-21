@@ -1,22 +1,22 @@
-// .filter() filters values of an array.
+// .filter() creates a new array with all elements that pass the test implemented by the provided function.
 
 // SYNTAX:
-// .filter(callbackFn)
-// .filter(callbackFm, args)
+// array.filter(callbackFn)
+// array.filter(callbackFn, thisArg)
 
 // PARAMETERS:
-// element - The current element being processed
-// index (optional) - the index of the current element being processed in the array
-// array (optional) - the array .filter() was called on
+// callbackFn - Function to test each element.
+// element - The current element being processed.
+// index (optional) - The index of the current element being processed in the array.
+// array (optional) - The array .filter() was called on.
 
 // RETURNS:
-// shallow shallow copy or array containing the elements that passed the test
+// A new array containing the elements that passed the test. If no elements pass, an empty array is returned.
 
 // MUTATION:
-// does NOT mutate original array.
+// Does NOT mutate the original array.
 
-// EXAMPLE:
-// Get a list of all tasks that are not completed
+// EXAMPLE 1: Get a list of all tasks that are not completed
 const tasks = [
   { description: "Finish portfolio", completed: true },
   { description: "Buy groceries", completed: false },
@@ -25,13 +25,15 @@ const tasks = [
   { description: "Study JavaScript", completed: true },
 ];
 
-let filtered = tasks.filter((task) => {
-  return task.completed === false;
-});
+let filtered = tasks.filter((task) => task.completed === false);
 
-console.log(filtered); // [ {description: 'Buy groceries', completed: false} { description: 'Workout', completed: false } ]
+console.log(filtered);
+// [
+//   { description: 'Buy groceries', completed: false },
+//   { description: 'Workout', completed: false }
+// ]
 
-// EXAMPLE 2:
+// EXAMPLE 2: Filter numbers greater than 15
 const numbers = [10, 20, 30, 40];
 
 const filteredArray = numbers.filter((num, index, arr) => {
@@ -39,7 +41,7 @@ const filteredArray = numbers.filter((num, index, arr) => {
   return num > 15;
 });
 
-console.log(filtered);
+console.log(filteredArray);
 // Checking index 0: 10 in [10,20,30,40]
 // Checking index 1: 20 in [10,20,30,40]
 // Checking index 2: 30 in [10,20,30,40]

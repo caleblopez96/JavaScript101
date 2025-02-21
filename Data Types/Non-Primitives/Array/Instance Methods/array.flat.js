@@ -1,17 +1,17 @@
-// use .flat() to create a new array with all sub-array elements concatenated
+// use .flat() to create a new array with all sub-array elements concatenated into it.
 
 // SYNTAX:
-// .flat()
-// .flat(depth)
+// array.flat()
+// array.flat(depth)
 
 // PARAMETERS:
-// depth (optional) - depth level to flatten
+// depth (optional) - The depth level specifying how deep a nested array structure should be flattened.
 
 // RETURNS:
-// a new array with the sub array elements concatenated to it
+// A new array with the sub-array elements concatenated into it.
 
 // MUTATION:
-// does NOT mutate original array
+// Does NOT mutate the original array.
 
 // EXAMPLE:
 const flattenArray = [1, 2, 3, [4, 5, [6, 7, 8, 9]]];

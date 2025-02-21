@@ -1,7 +1,8 @@
-// .pop() removes the last element from the array
+// .pop() removes the last element from the array and returns that element.
+// MUTATES the original array.
 
 // SYNTAX:
-// .pop()
+// array.pop()
 
 // PARAMETERS:
 // none
@@ -10,18 +11,18 @@
 // the element removed from the array.
 
 // MUTATION:
-// MUTATES original array
+// MUTATES the original array
 
-// EXAMPLE:
+// EXAMPLE: Removing the last number from an array
 const numbers = [1, 2, 3, 4, 5];
-numbers.pop(); // 5
-console.log(numbers); // [1, 2, 3, 4];
+const lastNumber = numbers.pop(); // 5
+console.log(numbers); // [1, 2, 3, 4]
 
-// EXAMPLE 2:
+// EXAMPLE 2: Using .pop() in a function to remove the last item from a shopping cart
 let shoppingCart = ["Item 1", "Item 2", "Item 3", "Item 4"];
 
 function removeLastItem(array) {
-  const removedItem = shoppingCart.pop();
+  const removedItem = array.pop(); // Change from shoppingCart to array for better reusability
   console.log(`Removed: ${removedItem}`);
 }
 

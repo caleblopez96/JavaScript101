@@ -1,4 +1,4 @@
-// .toSorted() sorts elements in an array and returns them in a new array
+// .toSorted() sorts elements in an array and returns them in a new array.
 
 // SYNTAX:
 // .toSorted()
@@ -22,7 +22,7 @@
 const numbers = [99, 45, 88, 31, 66];
 
 const numbersSorted = numbers.toSorted((a, b) => a - b);
-console.log(numbers); // [99, 45, 88, 31, 66];
+console.log(numbers); // [99, 45, 88, 31, 66]
 console.log(numbersSorted); // [31, 45, 66, 88, 99]
 
 // REFERENCE:

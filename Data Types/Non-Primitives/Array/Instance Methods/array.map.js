@@ -1,27 +1,26 @@
-// .map() returns new array containing results after applying a callback function.
+// .map() returns a new array containing results after applying a callback function to each element of the array.
+// does NOT mutate the original array.
 
 // SYNTAX:
-// .map(callbackFn);
-// .map(callbackFn, thisArg);
-// .map((element, index, array) => {}, thisArg); no access to 'this'
-// .map(function(element, index, array) {}, thisArg); access to 'this'
+// array.map(callbackFn)
+// array.map(callbackFn, thisArg)
+// array.map((element, index, array) => {}, thisArg); // no access to 'this'
+// array.map(function(element, index, array) {}, thisArg); // access to 'this'
 
 // PARAMETERS:
-// callbackFn - function to execute on each element of array
-// element - current element being processed in the array
-// index - index of current element being processed in the array
+// callbackFn - function to execute on each element of the array
+// element - the current element being processed in the array
+// index - the index of the current element being processed in the array
 // array - the array map was called on
-// thisArg - value to use as this
+// thisArg - value to use as `this` inside callbackFn
 
 // RETURNS:
-// a new array
+// a new array with results from the callback function
 
 // MUTATION:
-// does NOT mutate original array
+// does NOT mutate the original array
 
-// EXAMPLE:
-// Create a new array that only includes the descriptions of each task
-
+// EXAMPLE: Create a new array that includes only the descriptions of each task
 const tasks = [
   { description: "Finish portfolio", completed: false },
   { description: "Buy groceries", completed: false },
@@ -33,8 +32,7 @@ const tasks = [
 let descriptions = tasks.map((task) => task.description);
 console.log(descriptions); // ['Finish portfolio', 'Buy groceries', 'Reply to emails', 'Workout', 'Study JavaScript']
 
-// EXAMPLE:
-// map the status of the completed task
+// EXAMPLE: Map the status of the completed tasks
 let isCompleted = tasks.map((task) => task.completed);
 console.log(isCompleted); // [false, false, true, false, true]
 

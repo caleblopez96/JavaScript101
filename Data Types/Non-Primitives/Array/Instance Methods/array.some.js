@@ -1,29 +1,31 @@
-// .some() checks if at least one element in array passes test from function
+// .some() checks if at least one element in the array passes the test implemented by the provided function.
 
 // SYNTAX:
-// .some(callbackFn)
-// .some(callbackFn, thisArg)
-// .some((element, index, array) => {}, thisArg); no access to 'this'
-// .some(function(element, index, array) {}, thisArg); access to 'this'
+// array.some(callbackFn)
+// array.some(callbackFn, thisArg)
 
 // PARAMETERS:
-// element - current element being processed in the array
+// callbackFn - Function to test for each element. It accepts three arguments:
+//   - element - The current element being processed in the array.
+//   - index (optional) - The index of the current element.
+//   - array (optional) - The array some was called upon.
+// thisArg (optional) - Value to use as `this` when executing `callbackFn`.
 
 // RETURNS:
-// boolean if one or more passes test
+// A boolean indicating whether at least one element passes the test.
 
 // MUTATION:
-// does NOT mutate original array
+// does NOT mutate the original array.
 
-// EXAMPLE:
+// EXAMPLE 1:
 console.log([1, 2, 3, 4, 5].some((num) => num === 0)); // false
 
-// EXAMPLE:
+// EXAMPLE 2: check for even numbers
 const numbers = [1, 2, 3, 4, 5];
 
 const hasEven = numbers.some((element, index, array) => {
   console.log(`Element: ${element}, Index: ${index}, Array: ${array}`);
-  return element % 2 === 0; // Check if the element is even
+  return element % 2 === 0;
 });
 
 console.log(hasEven); // true
