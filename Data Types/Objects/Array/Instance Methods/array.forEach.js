@@ -4,10 +4,7 @@
 // .forEach(callbackFn)
 // .forEach(callbackFn, thisArg)
 // .forEach((element, index, array) => {}, thisArg) no access to 'this'
-//
-letters.forEach(function (element, index, array) {
-  console.log(thisArg);
-}, thisArg); // access to 'this'
+// .forEach(function (element, index, array) {}, thisArg); // access to 'this'
 
 // PARAMETERS:
 // element – The current element being processed (required).

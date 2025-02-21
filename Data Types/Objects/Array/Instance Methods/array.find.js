@@ -1,7 +1,5 @@
 // .find() searches for the first element that matches a condition.
 
-// Use .filter() instead of .find() when you need multiple results.
-
 // SYNTAX:
 // .find(callbackFn)
 // .find(callbackFn, thisArg)

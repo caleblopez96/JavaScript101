@@ -1,14 +1,22 @@
-// use the join() method to concatenate all elements of an array into a string.
+// .join() creates and returns a new string by concatenating all of the elements in the array
 
 // SYNTAX:
 // array.join()
 // array.join(separator)
 
+// PARAMETERS:
+// separator (optional) - string to separate concatenations by
 
-const colorArray = ['red', 'green', 'white', 'black']
+// RETURNS:
+// a string with all elements joined
 
-function joinAllEl(array) {
-  return array.join(', ')
-}
+// MUTATION:
+// does NOT mutate original array
 
-joinAllEl(colorArray) // 'red, green, white, black'
+// EXAMPLE:
+const colorArray = ["red", "green", "white", "black"];
+colorArray.join(); // 'red, green, white, black'
+colorArray.join(" - "); // 'red - green - white - black'
+
+// REFERENCE:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
