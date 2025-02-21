@@ -1,4 +1,4 @@
-// .reduce() applies a reducer function on each element in the array
+// .reduceRight() applies a reducer function on each element in the array starting from the right
 
 // SYNTAX:
 // .reduce(callbackFn)
@@ -22,7 +22,7 @@
 // does NOT mutate original array
 
 // EXAMPLE:
-[1, 2, 3, 4, 5].reduce(
+[1, 2, 3, 4, 5].reduceRight(
   (accumulator, currentValue) => accumulator + currentValue
 ); // 15
 
@@ -33,7 +33,10 @@ const cartItems = [
   { name: "Item 3", price: 20 },
 ];
 
-const totalPrice = cartItems.reduce((acc, item) => acc + item.price, 0);
+const totalPrice = cartItems.reduceRight(
+  (acc, curVal) => acc + curVal.price,
+  0
+);
 
 console.log(`Total Price: $${totalPrice}`); // Total Price: $45
 
