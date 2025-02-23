@@ -48,5 +48,18 @@ console.log(filteredArray);
 // Checking index 3: 40 in [10,20,30,40]
 // [20, 30, 40]
 
+// EXAMPLE 3:
+// Count Occurrences of a Specific Value
+// Given an array of values and a target value, return the number of times the target appears in the array.
+
+// Example: ([1, 2, 3, 2, 4, 2], 2) → 3
+
+// algo: filter them then return teh length of the array mapped
+function countOccurrences(array, target) {
+  let containsTarget = array.filter((element) => element === target);
+  return containsTarget.length;
+}
+console.log(countOccurrences([1, 2, 3, 2, 4, 2], 2));
+
 // REFERENCE:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
