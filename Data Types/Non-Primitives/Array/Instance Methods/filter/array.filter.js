@@ -56,10 +56,10 @@ console.log(filteredArray);
 
 // algo: filter them then return teh length of the array mapped
 function countOccurrences(array, target) {
-  let containsTarget = array.filter((element) => element === target);
+  const containsTarget = array.filter((element) => element === target);
   return containsTarget.length;
 }
-console.log(countOccurrences([1, 2, 3, 2, 4, 2], 2));
+countOccurrences([1, 2, 3, 2, 4, 2], 2); // 3
 
 // REFERENCE:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
