@@ -32,9 +32,13 @@ const tasks = [
 let descriptions = tasks.map((task) => task.description);
 console.log(descriptions); // ['Finish portfolio', 'Buy groceries', 'Reply to emails', 'Workout', 'Study JavaScript']
 
-// EXAMPLE: Map the status of the completed tasks
-let isCompleted = tasks.map((task) => task.completed);
-console.log(isCompleted); // [false, false, true, false, true]
+// EXAMPLE:
+function capitalizeFirstLetter(array) {
+  return array.map(
+    (element) => element.charAt(0).toUpperCase() + element.slice(1)
+  );
+}
+console.log(capitalizeFirstLetter(["hello", "world"])); // ['Hello', 'World']
 
 // REFERENCE:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map

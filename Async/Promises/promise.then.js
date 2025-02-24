@@ -14,12 +14,12 @@
 // EXAMPLE:
 function fetchData() {
   return new Promise((resolve, reject) => {
-      setTimeout(() => {
+    setTimeout(() => {
       //
-      }, timeout);
-  })
+    }, timeout);
+  });
 }
 fetchData()
-.then((response) => response.json())
-.then((data) => console.log(data))
-.catch((error) => console.log("Error:", error))
+  .then((response) => response.json())
+  .then((data) => console.log(data))
+  .catch((error) => console.log("Error:", error));
