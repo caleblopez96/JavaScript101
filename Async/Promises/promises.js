@@ -11,11 +11,6 @@
 // use the .catch() method to interact with a rejected promise.
 // use the .finally() method to execute code regardless of resolution or rejection.
 
-// SYNTAX:
-const promiseSyntax = new Promise((resolve, reject) => {
-  //
-});
-
 // EXAMPLE: CREATING A PROMISE
 function fetchData(url) {
   return new Promise((resolve, reject) => {
