@@ -23,4 +23,10 @@ class ColorTriangle extends Triangle {
     super(a, b); // this calls the parent constructor and inherits the a, b constructor property
     this.color = color; // add the new constructor property
   }
+  getColor() {
+    return this.color;
+  }
 }
+const redTriangle = new ColorTriangle(3, 4, "red");
+console.log(redTriangle); // ColorTriangle {a: 3, b: 4, color: "red"}
+console.log(redTriangle.getColor()); // 'red'
