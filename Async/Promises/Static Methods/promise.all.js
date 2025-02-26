@@ -16,11 +16,11 @@ const url = `${BASE_URL}`;
 
 const iterablePromiseArray = [
   fetch(`${url}/1`),
-  fetch(`${url}/1`),
-  fetch(`${url}/1`),
-  fetch(`${url}/1`),
-  fetch(`${url}/1`),
-  fetch(`${url}/1`),
+  fetch(`${url}/2`),
+  fetch(`${url}/3`),
+  fetch(`${url}/4`),
+  fetch(`${url}/5`),
+  fetch(`${url}/6`),
 ];
 
 Promise.all(iterablePromiseArray)
@@ -33,7 +33,7 @@ Promise.all(iterablePromiseArray)
     console.log(error);
   });
 
-// EXAMPLE with ASYNC func:
+// EXAMPLE: async...await
 async function getLotsOfPokemon() {
   try {
     const results = await Promise.all(iterablePromiseArray);

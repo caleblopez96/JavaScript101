@@ -4,14 +4,6 @@
 
 // you cannot use await without async.
 
-// EXAMPLE with ASYNC...AWAIT:
-async function getFirstPokemon() {
-  const response = await fetch("https://pokeapi.co/api/v2/pokemon/1");
-  const data = await response.json();
-  console.log(data);
-}
-getFirstPokemon();
-
 // EXAMPLE with ASYNC...AWAIT with TRY/CATCH
 async function getFirstPokemon() {
   try {
@@ -29,10 +21,10 @@ getFirstPokemon();
 // Without ASYNC...AWAIT
 function fetchData() {
   fetch("URL_HERE")
-    .then((response) => response.json()) // handles response and JSON parse
+    .then((response) => response.json())
     .then((data) => {
       console.log(data);
     })
-    .catch((error) => console.log(error)); // Catch and log any errors
+    .catch((error) => console.log(error));
 }
 getFirstPokemon();

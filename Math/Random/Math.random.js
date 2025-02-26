@@ -17,8 +17,7 @@ console.log(Math.random()); // a number from 0 to <1
 // EXAMPLE 3: get random index from array
 function randomInd(array) {
   let rand = Math.floor(Math.random() * array.length);
-  let randomIndex = array[rand];
-  return randomIndex;
+  return array[rand];
 }
 
 const carArray = [
