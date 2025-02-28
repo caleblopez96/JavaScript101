@@ -1,5 +1,7 @@
-// The static method .all() of the Promise object accepts an iterable (like an array) of promises
-// and returns a single promise that resolves when all the input promises have resolved.
+// .all() takes an iterable (like an array) of promises
+// and returns a single promise that resolves when *all* input promises resolve.
+
+// If any promise rejects, the entire Promise.all() rejects immediately with that error.
 
 // SYNTAX:
 // Promise.all(iterable)
