@@ -1,7 +1,7 @@
 // .all() takes an iterable (like an array) of promises
 // and returns a single promise that resolves when *all* input promises resolve.
 
-// If any promise rejects, the entire Promise.all() rejects immediately with that error.
+// Promise.all() fails fast if any promise rejects and returns the reason
 
 // SYNTAX:
 // Promise.all(iterable)

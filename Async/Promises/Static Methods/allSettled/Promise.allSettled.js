@@ -1,7 +1,4 @@
-// Promise.allSettled() waits until *all* promises have either resolved or rejected.
-
-// It returns a promise that resolves with an array of objects describing each promise's outcome,
-// regardless of whether they fulfilled or rejected.
+// Promise.allSettled() waits for all promises and provides results for both fulfilled and rejected ones.
 
 // SYNTAX:
 // Promise.allSettled(iterable);
