@@ -5,7 +5,7 @@
 // Promise.all(iterable)
 
 // PARAMETERS:
-// - iterable: An iterable collection (e.g., an array) containing multiple promises.
+// - iterable: An iterable collection of promises
 
 // RETURNS:
 // A single Promise that resolves with an array of the results from all the input promises.
