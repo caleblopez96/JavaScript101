@@ -1,5 +1,5 @@
 // Function that generates a random user
-function getUser() {
+export default function getUser() {
   // Helper function to generate a random number
   const getRandomNumber = (max) => Math.floor(Math.random() * max);
 
