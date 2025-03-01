@@ -3,7 +3,8 @@
 // if its falsy, it short circuits and keeps original value.
 
 // SYNTAX:
-// &&=
+// x &&= y
+// Equivalent to: x = x && y
 
 // EXAMPLE:
 
