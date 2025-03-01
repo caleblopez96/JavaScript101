@@ -1,4 +1,6 @@
-// .at() retrieves an element at the specified index, supporting negative indices for reverse lookup.
+// .at() retrieves an element at the specified index.
+//
+// supports negative indices for reverse lookup.
 
 // SYNTAX:
 // array.at(index)
@@ -16,6 +18,7 @@
 const array = [1, 2, 3, 4, 5];
 
 console.log(array.at(3)); // 4
+console.log(array[-1]); // undefined
 console.log(array.at(-1)); // 5 (last element)
 console.log(array.at(-2)); // 4 (second-to-last element)
 console.log(array.at(10)); // undefined (out of bounds)
