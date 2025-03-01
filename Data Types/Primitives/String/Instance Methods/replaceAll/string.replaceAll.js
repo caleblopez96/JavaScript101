@@ -5,9 +5,9 @@
 // globally without the need for a regular expression.
 
 // EXAMPLE:
-const inputText = "Hi there! :) How are you doing? :)";
+const inputText =
+  "I really love dogs. My dog is an amazing pet. She loves to cuddle with me and play. What a great dog. dog. dog. dog.";
 
-// Replace all smiley faces with emojis
-const formattedText = inputText.replaceAll(":)", "😊");
+const inputTextCat = inputText.replaceAll("dog", "cat");
 
-console.log(formattedText); // Hi there! 😊 How are you doing? 😊
+console.log(inputTextCat); // I really love cats. My cat is an amazing pet. She loves to cuddle with me and play. What a great cat. cat. cat. cat.
