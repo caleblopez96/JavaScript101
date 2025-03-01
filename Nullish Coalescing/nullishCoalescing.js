@@ -3,6 +3,31 @@
 // SYNTAX:
 // leftExpression ?? rightExpression
 
-// EXAMPLE: 0 is falsy so left side never evaluates to true even if you need the value
-console.log(0 || "other value"); // 'other value
-console.log(0 ?? "other value"); // 0
+// EXAMPLE:
+const human = {
+  height: 67,
+  weight: 135,
+  name: "john",
+  address: {
+    city: "Phoenix",
+    state: "Arizona",
+  },
+};
+
+const human2 = {
+  height: 69,
+  weight: 150,
+  name: "bob",
+  age: 30,
+  address: {
+    city: "Mesa",
+  },
+};
+
+// accessing an undefined property without nullish coalescing
+console.log(human.age); // undefined
+
+// use nullish coalescing to provide a default value thats read when/if the property is null/undefined
+console.log(human?.age ?? "Age not provided"); // 'Age not provided
+
+console.log(human2.address?.state ?? "State not provided"); // 'State not provided'
