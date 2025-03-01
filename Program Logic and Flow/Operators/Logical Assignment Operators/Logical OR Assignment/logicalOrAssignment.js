@@ -1,4 +1,4 @@
-// The logical or assingment operator ||= checks if the left-hand side is a falsy value and replaces it with the right-hand side value.
+// The Logical OR Assignment (||=) operator checks if the left-hand side is a falsy value and replaces it with the right-hand side value.
 
 // SYNTAX:
 // x ||= y
