@@ -25,3 +25,10 @@ console.log(todo2); // {priority: "HIGH", task: "Eat food"}
 
 // EXAMPLE 2: Providing a default message if an element is empty
 document.getElementById("lyrics").textContent ||= "No lyrics available";
+
+// REFERENCES:
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40741328#content
+
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Logical_OR_assignment

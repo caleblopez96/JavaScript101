@@ -7,13 +7,20 @@ const url = `${BASE_URL}`;
 
 // EXAMPLE: good
 async function get3Pokemon() {
-  const res1 = await fetch(`${url}/1`);
-  const pokemon1 = res1.json();
-  const res2 = await fetch(`${url}/2`);
-  const pokemon2 = res2.json();
-  const res3 = await fetch(`${url}/3`);
-  const pokemon3 = res3.json();
-  const results = [res1, res2, res3];
+  try {
+    const res1 = await fetch(`${url}/1`);
+    const pokemon1 = await res1.json();
+
+    const res2 = await fetch(`${url}/2`);
+    const pokemon2 = await res2.json();
+
+    const res3 = await fetch(`${url}/3`);
+    const pokemon3 = await res3.json();
+
+    const results = [pokemon1, pokemon2, pokemon3];
+  } catch (error) {
+    console.log("Error fetching pokemon: ", error);
+  }
 }
 
 // EXAMPLE: bad
