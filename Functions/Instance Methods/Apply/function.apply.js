@@ -1,3 +1,5 @@
+// allows you to call a function on a 'this' object.
+
 // .apply() is a lot like .call(), but it accepts arguments as an array.
 
 // SYNTAX:
