@@ -55,3 +55,11 @@ console.log(fiboSeqGen.next()); // { done: false, value: 8 }
 console.log(fiboSeqGen.next()); // { done: false, value: 13 }
 console.log(fiboSeqGen.next()); // { done: false, value: 21 }
 console.log(fiboSeqGen.next()); // { done: false, value: 34 }
+
+// REFERENCE:
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40741628#overview
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40741630#overview
+
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function*s
