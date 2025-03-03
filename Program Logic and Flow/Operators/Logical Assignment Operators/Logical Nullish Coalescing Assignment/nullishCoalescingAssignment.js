@@ -23,6 +23,9 @@ function doSomeSetup(options = {}) {
 let setup1 = doSomeSetup();
 console.log(setup1); // {retries: 5, timeout: 3000}
 
+let setup2 = doSomeSetup({ timeout: 1000 });
+console.log(setup2); // {retries: 5, timeout: 1000}
+
 // REFERENCES:
 
 // COLT STEELE:

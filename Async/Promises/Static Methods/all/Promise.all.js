@@ -25,16 +25,6 @@ const iterablePromiseArray = [
   fetch(`${url}/6`),
 ];
 
-Promise.all(iterablePromiseArray)
-  .then((results) => {
-    console.log("Promise.all() is done and resolved!");
-    console.log(results);
-  })
-  .catch((error) => {
-    console.log("One of the promises was rejected");
-    console.log(error);
-  });
-
 // EXAMPLE: async...await
 async function getLotsOfPokemon() {
   try {
@@ -46,3 +36,13 @@ async function getLotsOfPokemon() {
     console.log(error);
   }
 }
+
+Promise.all(iterablePromiseArray)
+  .then((results) => {
+    console.log("Promise.all() is done and resolved!");
+    console.log(results);
+  })
+  .catch((error) => {
+    console.log("One of the promises was rejected");
+    console.log(error);
+  });
