@@ -30,3 +30,11 @@ class ColorTriangle extends Triangle {
 const redTriangle = new ColorTriangle(3, 4, "red");
 console.log(redTriangle); // ColorTriangle {a: 3, b: 4, color: "red"}
 console.log(redTriangle.getColor()); // 'red'
+
+// REFERENCE:
+
+// COLT STEELE
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40702422#overview
+
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/super

@@ -48,3 +48,10 @@ myTriangle.a = 3;
 myTriangle.b = 4;
 myTriangle.getArea(); // 6
 myTriangle.getHypotenuse(); // 5
+
+// REFERENCE:
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40702412#overview
+
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/constructor
