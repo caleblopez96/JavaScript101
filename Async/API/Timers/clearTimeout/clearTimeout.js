@@ -13,7 +13,7 @@
 function greet() {
   console.log("hello");
 }
-const myGreeting = setTimeout(greet, 10000); // 7 --> timeout ID retrived from the console
+const myGreeting = setTimeout(greet, 10000);
 clearTimeout(myGreeting); // stops the greet function from being executed by its setTimeout
 
 // EXAMPLE:

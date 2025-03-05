@@ -11,6 +11,7 @@
 
 // EXAMPLE:
 function startCountdown(duration) {
+  // theoretical h1
   const h1 = document.querySelector("h1");
   let secondsRemaining = duration;
   const intervalId = setInterval(() => {
