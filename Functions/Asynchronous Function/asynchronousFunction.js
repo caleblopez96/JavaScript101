@@ -1,8 +1,19 @@
+// Use asynchronous functions to handle asynchronous operations
+
+// Async functions return a Promise and allow the use of 'await' for cleaner asynchronous code
+
+// SYNTAX:
+// async function functionName() { ... }
+// await asyncFunction()
+
+// RETURNS:
+// A Promise that resolves when the asynchronous operation is complete
+
 // EXAMPLE:
 const BASE_URL = "https://pokeapi.co/api/v2/pokemon";
 const url = `${BASE_URL}`;
 
-// EXAMPLE: good
+// EXAMPLE: Fetch 3 Pokémon using async functions
 async function get3Pokemon() {
   try {
     const res1 = await fetch(`${url}/1`);
@@ -16,6 +27,11 @@ async function get3Pokemon() {
 
     const results = [pokemon1, pokemon2, pokemon3];
   } catch (error) {
-    console.log("Error fetching pokemon: ", error);
+    console.log("Error fetching Pokémon: ", error);
   }
 }
+
+// REFERENCE:
+
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function
