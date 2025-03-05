@@ -32,6 +32,7 @@ const timeoutId = setTimeout(() => {
 // clear timeout so the redirect stops and you stay on the current page
 cancelButton.addEventListener("click", () => {
   clearTimeout(timeoutId);
+  console.log("REDIRECT ABORTED");
 });
 
 // REFERENCES:
