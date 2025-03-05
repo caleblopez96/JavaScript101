@@ -25,3 +25,11 @@ const circle = new Circle(5);
 //* access the getter like a property, not a method
 console.log(circle.diameter); // 10
 console.log(circle.diameter()); //! circle.diameter is not a function
+
+// REFERENCE:
+
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40702430#overview
+
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/get

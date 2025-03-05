@@ -24,3 +24,11 @@ class Circle {
 const c = new Circle(5);
 c.radius = 23; // this updates the set radius() which actually updates this._radius
 console.log(c._radius); // 23
+
+// REFERENCE:
+
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40702432#overview
+
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/set
