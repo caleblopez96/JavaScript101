@@ -1,6 +1,6 @@
 // throttling is a technique used to make sure a function is called at most one time throughout some duration
 
-// EXAMPLE: infinite scroll
+// EXAMPLE: infinite scroll that loads 10 randomly colored div if youre within 200 px of the bottom of the page,
 function getRandomColor() {
   const colors = [
     "#FF5733",
@@ -41,8 +41,15 @@ function loadMoreItems() {
     }
   }
 }
+let isThrottled = false;
 window.addEventListener("scroll", () => {
-  loadMoreItems();
+  if (!isThrottled) {
+    loadMoreItems();
+    isThrottled = true;
+    setTimeout(() => {
+      isThrottled = false;
+    }, 300);
+  }
 });
 
 // initial load
