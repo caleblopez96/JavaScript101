@@ -16,7 +16,7 @@
 // https://codepen.io/caleblopez/pen/YPzVRbr
 
 const boxInterval = document.querySelector("#boxInterval");
-const animationFrame = document.querySelector("#boxAnimationFrame");
+const boxAnimationFrame = document.querySelector("#boxAnimationFrame");
 
 let intervalAngle = 0;
 let animationAngle = 0;
