@@ -38,7 +38,7 @@ console.log(colors); // ['red', 'blue', 'white']
 function pureAddToArray(array, value) {
   return [...array, value];
 }
-console.log(pureAddToArray(colors, "green"));
+console.log(pureAddToArray(colors, "green")); // ['red', 'blue', 'white', 'green']
 console.log(colors); // ['red', 'blue', 'white'] --> array unmutated
 
 // REFERENCE:
@@ -54,7 +54,7 @@ function increment() {
 
 // 1. pure
 function pureIncrement(count) {
-  return count++;
+  return count + 1;
 }
 
 // 2️⃣ Impure: Changing an array directly
@@ -65,17 +65,6 @@ function addNumber(num) {
 // 2. pure
 function addNumberPure(array, num) {
   return [...array, num];
-}
-
-// 3️⃣ Impure: Randomness
-function getRandomNumber() {
-  return Math.random();
-}
-
-// 3. pure
-function getRandomNumberPure() {
-  let randomNumber = Math.random();
-  return randomNumber;
 }
 
 // 4️⃣ Impure: Modifying an object property
