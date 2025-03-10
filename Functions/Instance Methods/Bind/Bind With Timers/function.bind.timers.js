@@ -1,21 +1,31 @@
 class Counter {
-  constructor(count = 0, incrementAmt = 1, interval) {
-    this.count = count;
+  constructor(startingNum = 0, incrementAmt = 1) {
+    this.count = startingNum;
     this.incrementAmt = incrementAmt;
     this.interval = null;
   }
-
   start() {
-    interval = setInterval(() => {
-      console.log(this.count);
-      this.count += this.incrementAmt;
-    }, 1000);
+    this.interval = setInterval(this.incrementAndPrint.bind(this), 1000);
   }
 
-  end() {
-    clearInterval(interval);
+  stop() {
+    clearInterval(this.interval);
+  }
+
+  incrementAndPrint() {
+    console.log(this.count);
+    this.count += this.incrementAmt;
   }
 }
+// create a counter starting at 10, incremented by 2
+let counter = new Counter(10, 2);
 
-const counter = new Counter();
+// start the counter for 5 seconds
 counter.start();
+setTimeout(() => {
+  counter.stop();
+}, 5000);
+
+// REFERENCE:
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40713578#overview
