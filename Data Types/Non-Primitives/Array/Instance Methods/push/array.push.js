@@ -45,27 +45,17 @@ const array2 = [1, 2, 3];
 array2.push("a", "b", "c");
 console.log(array2); // [1, 2, 3, 'a', 'b', 'c']
 
-// EXAMPLE: inserting dashes between even numbers
-function dashFormatter(number) {
-  let numToString = number.toString();
-  let result = [];
-
-  for (let i = 0; i < numToString.length; i++) {
-    result.push(numToString[i]);
-
-    // Check if the current and next numbers are both even
-    if (
-      i < numToString.length - 1 &&
-      parseInt(numToString[i]) % 2 === 0 &&
-      parseInt(numToString[i + 1]) % 2 === 0
-    ) {
-      result.push("-"); // Add a dash if both are even
-    }
-  }
-  return result.join(""); // Join the array into a string
+// EXAMPLE: push without mutation
+function push(arr, val) {
+  return [...arr, val];
 }
-
-console.log(dashFormatter(25468)); // Outputs: "0-2-4-6-8"
+const nums = [1, 2, 3];
+console.log(push(nums, 4));
+console.log(nums); // [1, 2, 3]
 
 // REFERENCE:
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40746898#overview
+
+// MDN:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push

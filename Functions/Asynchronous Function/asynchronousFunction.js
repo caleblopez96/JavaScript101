@@ -26,12 +26,20 @@ async function get3Pokemon() {
     const pokemon3 = await res3.json();
 
     const results = [pokemon1, pokemon2, pokemon3];
+    console.log(results);
+    return results;
   } catch (error) {
     console.log("Error fetching Pokémon: ", error);
   }
 }
 
+get3Pokemon();
+
 // REFERENCE:
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40725982#overview
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40725990#overview
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40725998#overview
 
 // MDN:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function

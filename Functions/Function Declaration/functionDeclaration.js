@@ -1,10 +1,8 @@
-// Function declarations are hoisted, 
-// which means they are moved to the top of their 
-// containing scope during the compilation phase. 
+// Function declarations are hoisted,
+// which means they are moved to the top of their
+// containing scope during the compilation phase.
 
 //** Hoisted **
-
-// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
 
 // SYNTAX:
 // function nameOfFunction() {}
@@ -15,3 +13,7 @@ function addition(...numbers) {
 }
 
 console.log(addition(1, 2, 3, 4)); // 10
+
+// REFERENCE:
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function
