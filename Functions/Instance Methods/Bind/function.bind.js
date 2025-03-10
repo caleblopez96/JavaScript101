@@ -32,3 +32,15 @@ const lisa = {
 
 const lisaSing = conan.sing.bind(lisa);
 console.log(lisaSing()); // "Lisa sings LA LA LA"
+
+// EXAMPLE: binding only one argument
+function greet(greeting, name) {
+  console.log(`${greeting}, ${name}!`);
+}
+// give thisArg the value of null
+const aussieGreet = greet.bind(null, "G'day");
+aussieGreet("Bob"); // "G'day Bob"
+
+// REFERENCE:
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/40746902#overview
