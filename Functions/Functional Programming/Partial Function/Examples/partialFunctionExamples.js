@@ -23,12 +23,12 @@ const fetchGoogle = partial(fetchData, googleApiUrl, googleApiKey);
 fetchMyApi({ id: 1, sort: "desc" }); // Request to my API with specific parameters
 fetchGoogle({ search: "dog" }); // Request to Google API with a search query
 
-// EXAMPLE:
+// Function to calculate sales tax and round to two decimal places
 function calculateSalesTax(rate, amount) {
   const total = rate * amount;
-  const roundTwoDecimals = total.toFixed(2);
-  return Number(roundTwoDecimals);
+  return parseFloat(total.toFixed(2));
 }
 
+// Create state-specific sales tax calculators using partial application
 const calculateCASalesTax = partial(calculateSalesTax, 0.07);
 const calculateTXSalesTax = partial(calculateSalesTax, 0.08);

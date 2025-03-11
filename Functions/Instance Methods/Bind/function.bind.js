@@ -22,8 +22,7 @@ const conan = {
     return `${this.name} sings LA LA LA`;
   },
 };
-
-console.log(conan.sing()); // "Conan sings LA LA LA"
+conan.sing(); // "Conan sings LA LA LA"
 
 const lisa = {
   name: "Lisa",
@@ -31,7 +30,7 @@ const lisa = {
 };
 
 const lisaSing = conan.sing.bind(lisa);
-console.log(lisaSing()); // "Lisa sings LA LA LA"
+lisaSing(); // "Lisa sings LA LA LA"
 
 // EXAMPLE: binding only one argument
 function greet(greeting, name) {
@@ -44,3 +43,6 @@ aussieGreet("Bob"); // "G'day Bob"
 // REFERENCE:
 // COLT STEELE:
 // https://www.udemy.com/course/pro-javascript/learn/lecture/40746902#overview
+
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind

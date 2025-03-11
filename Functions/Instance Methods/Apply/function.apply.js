@@ -20,8 +20,8 @@ const ringo = {
     console.log(`${this.firstName} says ${greeting}!`);
   },
 };
-console.log(ringo.greet()); // "Ringo says hello"
-console.log(ringo.greet("hi")); // Ringo says hi!
+ringo.greet(); // "Ringo says hello!"
+ringo.greet("hi"); // "Ringo says hi!"
 
 const george = {
   firstName: "George",
@@ -29,16 +29,24 @@ const george = {
 };
 
 // call accepts any number of arguments not in an array
-console.log(ringo.greet.call(george, "Hiya"));
+ringo.greet.call(george, "Hiya"); // "George says Hiya"
 // apply accepts any number of arguments as long as they're in an array
-console.log(ringo.greet.apply(george, ["Hiya"])); //
+ringo.greet.apply(george, ["Hiya"]); // "George says Hiya"
 
 // EXAMPLE:
 let nums = [2, 6, 88, 35, 21];
+
 // .call()
-console.log(Math.max.call(null, nums)); // NaN
-console.log(Math.max.call(...nums)); // 88
+Math.max.call(null, nums); // NaN
+Math.max.call(...nums); // 88
 
 // .apply()
-console.log(Math.max.apply(null, nums)); // 88
-console.log(Math.max.call(...nums)); // 88
+Math.max.apply(null, nums); // 88
+Math.max.call(...nums); // 88
+
+// REFERENCE:
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/41072960#overview
+
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
