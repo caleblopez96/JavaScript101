@@ -12,6 +12,10 @@
 // BOOLEAN
 
 // EXAMPLE:
-const string = "Saturday night plans";
-console.log(string.split(" ")[0].toLowerCase().startsWith("sat")); // true
-console.log(string.split(" ")[1].toLowerCase().startsWith("p")); // false
+const str = "Saturday night plans";
+str.split(" ")[0].toLowerCase().startsWith("sat"); // true
+str.split(" ")[1].toLowerCase().startsWith("p"); // false
+
+// REFERENCE:
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith

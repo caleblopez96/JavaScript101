@@ -1,7 +1,17 @@
-// used to remove whitespace characters from the end of a string. 
+// .trimEnd() removes whitespace at the end of a string
+
+// SYNTAX:
+// .trimEnd()
+
+// PARAMETERS:
+// none
+
+// RETURNS
+// a new string with the white space at the end removed
 
 // EXAMPLE:
-const text = "Hello, world!   ";
-const trimmedText = text.trimEnd();
+"Hello, World!   ".trimEnd(); // "Hello, World!"
 
-console.log(trimmedText); // Output: "Hello, world!"
+// REFERENCE:
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimEnd

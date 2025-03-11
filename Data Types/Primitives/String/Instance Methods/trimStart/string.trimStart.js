@@ -1,7 +1,16 @@
-// used to remove whitespace characters from the beginning (start) of a string.
+// .trimStart() removes any whitespace at the begginning of a string.
+
+// SYNTAX:
+// .trimStart()
+
+// PARAMETERS:
+// none
+
+// RETURNS:
 
 // EXAMPLE:
-const text = "   Hello, world!";
-const trimmedText = text.trimStart();
+"   Hello, World!".trimStart(); // "Hello, World!"
 
-console.log(trimmedText); // Output: "Hello, world!"
+// REFERENCE;
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/trimStart
