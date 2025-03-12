@@ -19,6 +19,6 @@ add(5, 3, 2); // 10
 curryAdd(5)(3)(2); // 10
 
 // step by step:
-curryAdd(5); // returns a function expecting another function
-curryAdd(5)(3); // returns a function expecting another function;
+curryAdd(5); // returns a function expecting another function (b)
+curryAdd(5)(3); // returns a function expecting another function (c);
 curryAdd(5)(3)(2); // 10
