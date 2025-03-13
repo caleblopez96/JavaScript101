@@ -20,7 +20,7 @@ class Triangle {
 // Create new triangle class that accepts a, b, and a color
 class ColorTriangle extends Triangle {
   constructor(a, b, color) {
-    super(a, b); // this calls the parent constructor and inherits the a, b constructor property
+    super(a, b); // this calls the parent constructor and inherits the a, b constructor
     this.color = color; // add the new constructor property
   }
   getColor() {

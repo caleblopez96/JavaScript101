@@ -7,6 +7,23 @@
 //   .then((data) => console.log(data))
 //   .catch((error) => console.log("error: ", error));
 
+// SYNTAX: async...await
+// const BASE_URL = "https://pokeapi.co/api/v2/pokemon";
+// const url = `${BASE_URL}`;
+
+// async function fetchData() {
+//   try {
+//     const response = await fetch(`${url}/`);
+//     if (!response.ok) {
+//       throw new Error(`HTTP ERROR! Status: ${response.status}`);
+//     }
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.error("Error: ", error);
+//   }
+// }
+
 // PARAMETERS:
 // url - the url of the api you're trying to hit
 
@@ -20,7 +37,7 @@ const url = `${baseURL}`;
 
 // EXAMPLE:
 fetch(`${url}/1`)
-  .then((response) => response.json()) // response and JSON parse
+  .then((response) => response.json()) // parse response into json
   .then((data) => {
     // data returned
     console.log(data); // do something with returned data
@@ -34,7 +51,7 @@ async function fetchSomeData() {
     const data = await response.json();
     console.log(data);
   } catch (error) {
-    console.log("Error: ", error);
+    console.error("Error: ", error);
   }
 }
 fetchSomeData();

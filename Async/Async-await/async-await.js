@@ -5,9 +5,11 @@
 // you cannot use await without async.
 
 // EXAMPLE with ASYNC...AWAIT with TRY/CATCH
+const BASE_URL = "https://pokeapi.co/api/v2/pokemon";
+const url = `${BASE_URL}`;
 async function getFirstPokemon() {
   try {
-    const response = await fetch("https://pokeapi.co/api/v2/pokemon/1");
+    const response = await fetch(url);
     const data = await response.json();
     console.log(data);
   } catch (error) {
