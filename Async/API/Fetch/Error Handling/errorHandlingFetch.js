@@ -21,6 +21,7 @@ const url = `${BASE_URL}`;
 async function fetchData() {
   try {
     const response = await fetch(`${url}/-1`); // force a 404 for example
+
     if (!response.ok) {
       throw new Error(`HTTP ERROR! Status: ${response.status}`);
     }
