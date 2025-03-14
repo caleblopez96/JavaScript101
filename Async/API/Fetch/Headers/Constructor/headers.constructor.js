@@ -1,11 +1,17 @@
-// Some APIs require additional information from the fetcher, which is why you might need headers.
+// The Headers() constructor creates a new headers object
 
-// include the headers object in the fetch request
+// SYNTAX:
+// new Headers
+// new Headers(init)
 
-// A nice and easy way to create headers is the Headers constructor.
+// PARAMETERS:
+// init (optional) - an object contianing any http headers you want to pre-populate
 
 // EXAMPLE:
+const myHeaders = new Headers();
+myHeaders.append("Content-Type", "image/jpeg");
 
+// EXAMPLE:
 const BASE_URL = "https://pokeapi.co/api/v2/pokemon";
 
 async function fetchDataWithHeaders() {
@@ -29,9 +35,8 @@ async function fetchDataWithHeaders() {
   }
 }
 
-// Call the function
 fetchDataWithHeaders();
 
 // REFERENCE:
-// COLT STEELE:
-// https://www.udemy.com/course/pro-javascript/learn/lecture/40789480#overview
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/API/Headers/Headers
