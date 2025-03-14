@@ -1,7 +1,7 @@
 // .delete() deletes a header from the header object
 
 // SYNTAX:
-// delete(name)
+// .delete(name)
 
 // PARAMETERS:
 // name - name of the HTTP header to delete
