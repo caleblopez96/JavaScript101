@@ -22,7 +22,7 @@ async function fetchDataWithHeaders() {
     }
 
     const pokemon1 = await response.json();
-    console.log(pokemon1); // Log or return the fetched data
+    console.log(pokemon1);
     return pokemon1;
   } catch (error) {
     console.error(`Error fetching data: ${error}`);
@@ -31,6 +31,11 @@ async function fetchDataWithHeaders() {
 
 // Call the function
 fetchDataWithHeaders();
+
+const response = await fetch(`${BASE_URL}/1`, {
+  "Content-Type": "application/json",
+  Authorization: "Bearer YOUR_TOKEN",
+});
 
 // REFERENCE:
 // COLT STEELE:
