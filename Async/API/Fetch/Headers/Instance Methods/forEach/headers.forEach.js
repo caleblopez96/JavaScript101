@@ -24,3 +24,7 @@ headers.forEach((header) => {
   // BEARER YOUR_TOKEN
   // APPLICATION/JSON
 });
+
+// REFERENCE:
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/API/Headers/forEach

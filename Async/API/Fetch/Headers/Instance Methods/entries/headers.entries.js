@@ -20,3 +20,7 @@ for (const header of headers.entries()) {
   // authorization: Bearer YOUR_TOKEN
   // content-type: application/json
 }
+
+// REFERENCE:
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/API/Headers/entries

@@ -13,3 +13,7 @@ const headers = new Headers({
 headers.delete("Authorization");
 
 console.log(headers.get("Authorization")); // null
+
+// REFERENCE:
+// MDN:
+// https://developer.mozilla.org/en-US/docs/Web/API/Headers/delete
