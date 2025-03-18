@@ -1,5 +1,8 @@
 // localStorage allows web apps to store key-value pairs in a web browser persistently across sessions
 
+// SYNTAX:
+// localStorage
+
 // localStorage only supports the storage of strings.
 // to get around this, store complex objects as JSON
 
