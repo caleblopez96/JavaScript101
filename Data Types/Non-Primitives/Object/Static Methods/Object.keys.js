@@ -24,5 +24,9 @@ console.log(object1Keys); // ['a', 'b', 'c']
 
 console.log(Object.keys(object1)); // ['a', 'b', 'c']
 
+// EXAMPLE: COMMON USE CASE
+
+Object.keys(object).map((day) => <li key={day}>{day}</li>);
+
 // REFERENCE:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys

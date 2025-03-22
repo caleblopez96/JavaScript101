@@ -1,5 +1,7 @@
 // localStorage allows web apps to store key-value pairs in a web browser persistently across sessions
 
+// do NOT store sensitive data in local storage
+
 // SYNTAX:
 // localStorage
 
