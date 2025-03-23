@@ -1,7 +1,7 @@
 // Expands elements from an array, object, or iterable into individual pieces.
 
 // SYNTAX:
-// myFunction(...iterableObj, a, b) //
+// myFunction(...iterableObj, a, b)
 
 // Spread syntax looks exactly like rest syntax.
 // In a way, spread syntax is the opposite of rest syntax.
@@ -26,3 +26,13 @@ console.log(...iterable); // ['firstName', 'first] ['lastName', 'last'] ['addres
 
 // REFERENCE:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax
+
+async function fetchData() {
+  try {
+    const response = await fetch(url);
+    const result = await response.json();
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+}
