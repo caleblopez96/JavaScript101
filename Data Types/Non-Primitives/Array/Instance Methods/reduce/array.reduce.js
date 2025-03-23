@@ -58,5 +58,9 @@ const fruitCount = fruits.reduce((acc, fruit) => {
 console.log(fruitCount);
 // Outputs: { apple: 2, banana: 3, orange: 2 }
 
+// EXAMPLE: use array reduce method to find max value
+const array2 = [2, 4, 6];
+console.log(array2.reduce((a, b) => Math.max(a, b)));
+
 // REFERENCE:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce
