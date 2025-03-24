@@ -33,7 +33,7 @@ const date = new Date("2025-02-20T10:30:00");
 console.log(date.toLocaleString("en-US")); // '2/20/2025, 10:30:00 AM'
 console.log(date.toLocaleString("fr-FR")); // '20/02/2025 à 10:30:00'
 
-// EXAMPLE 3: formatting a currency
+// EXAMPLE 3: formatting currency
 const price = 1234.56;
 console.log(
   price.toLocaleString("en-US", { style: "currency", currency: "USD" })

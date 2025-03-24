@@ -33,33 +33,21 @@ console.log(filtered);
 //   { description: 'Workout', completed: false }
 // ]
 
-// EXAMPLE 2: Filter numbers greater than 15
-const numbers = [10, 20, 30, 40];
-
-const filteredArray = numbers.filter((num, index, arr) => {
-  console.log(`Checking index ${index}: ${num} in [${arr}]`);
-  return num > 15;
-});
-
-console.log(filteredArray);
-// Checking index 0: 10 in [10,20,30,40]
-// Checking index 1: 20 in [10,20,30,40]
-// Checking index 2: 30 in [10,20,30,40]
-// Checking index 3: 40 in [10,20,30,40]
-// [20, 30, 40]
-
 // EXAMPLE 3:
 // Count Occurrences of a Specific Value
 // Given an array of values and a target value, return the number of times the target appears in the array.
 
-// Example: ([1, 2, 3, 2, 4, 2], 2) → 3
-
-// algo: filter them then return teh length of the array mapped
 function countOccurrences(array, target) {
   const containsTarget = array.filter((element) => element === target);
   return containsTarget.length;
 }
 countOccurrences([1, 2, 3, 2, 4, 2], 2); // 3
 
+// EXAMPLE 4: filter out by falsy values with Boolean constructor
+const array = [0, 1, false, 2, "", 3, null, undefined];
+const filteredArray2 = array.filter(Boolean);
+console.log(filteredArray2); // [1, 2, 3]
+
 // REFERENCE:
+// MDN:
 // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter
