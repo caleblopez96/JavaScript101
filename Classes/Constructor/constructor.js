@@ -28,7 +28,6 @@ class Triangle {
     return Math.sqrt(this.a ** 2 + this.b ** 2);
   }
 }
-
 const t = new Triangle(3, 4);
 t.getArea(); // 6
 t.getHypotenuse; // 5
