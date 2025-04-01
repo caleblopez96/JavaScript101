@@ -2,6 +2,9 @@
 
 // do NOT store sensitive data in local storage
 
+// if you're working with arrays or objects use JSON.parse()
+// if you're storing arrays or objects use JSON.stringify()
+
 // SYNTAX:
 // localStorage
 
