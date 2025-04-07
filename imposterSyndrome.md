@@ -52,7 +52,11 @@ const example = () => "hello world"
 const date = new Date()
 const day = date.getDate()
 }())
+
+theyre useful when you need a function to run automatically on page load and without being called
+
 // Closures: Explain closures and provide an example where they are useful.
+A closure is when a function has access to an outer functions variables. They're useful for higher order functions and when you 
 
 // Objects & Arrays
 // Objects: Create an object with at least three properties and access them in two different ways.
