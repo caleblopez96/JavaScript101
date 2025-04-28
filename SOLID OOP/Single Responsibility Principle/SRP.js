@@ -25,3 +25,7 @@ class UserSerializer {
     return JSON.stringify(user);
   }
 }
+
+// REFERENCE:
+// COLT STEELE:
+// https://www.udemy.com/course/pro-javascript/learn/lecture/41043342#overview
